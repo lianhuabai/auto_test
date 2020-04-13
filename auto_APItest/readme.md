@@ -1,10 +1,13 @@
-##接口自动化测试文档
-###基于python的requests,使用Pytest框架实现接口自动化
-###项目目录结构
+## 接口自动化测试文档  
+
+### 基于python的requests,使用Pytest框架实现接口自动化  
+
+### 项目目录结构  
+
 * Utils 自定义封装类
    * Requests.py 封装Requests请求方式
    * Email.py 邮件发送封装
-   * Read_conf.py 配置文件读取
+   * Constans.py 变量
    * Assert.py 断言
    * Log.py 封装Log
    * Token.py 登录token获取
