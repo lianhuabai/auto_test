@@ -5,4 +5,4 @@
 
 class Request:
     def __init__(self):
-        self.session = Se
+        pass

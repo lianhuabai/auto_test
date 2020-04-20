@@ -1,2 +1,9 @@
-[ERROR2020-04-13 16-20-05]This is error msessage
-[ERROR2020-04-13 16-20-22]This is error msessage
+
+[ERROR2020-04-16 10-18-00]邮件发送失败(535, b'Error: authentication failed')
+[ERROR2020-04-16 10-49-36]邮件发送失败(550, b'Invalid User', 'auto_test')
+[ERROR2020-04-16 10-50-27]邮件发送失败(554, b'DT:SPM 163 smtp12,EMCowAAnHwPzx5deDhexAQ--.8534S2 1587005429,please see http://mail.163.com/help/help_spam_16.htm?ip=122.224.247.242&hostid=smtp12&time=1587005429')
+[ERROR2020-04-16 10-55-43]邮件发送失败(554, b'DT:SPM 163 smtp12,EMCowAD37fkwyZdetmyxAQ--.8422S2 1587005746,please see http://mail.163.com/help/help_spam_16.htm?ip=122.224.247.242&hostid=smtp12&time=1587005746')
+[ERROR2020-04-16 10-58-33]邮件发送失败(554, b'DT:SPM 163 smtp12,EMCowAAHF_vayZdeqJuxAQ--.8598S2 1587005915,please see http://mail.163.com/help/help_spam_16.htm?ip=122.224.247.242&hostid=smtp12&time=1587005915')
+[ERROR2020-04-16 10-59-40]邮件发送失败(554, b'DT:SPM 163 smtp13,EcCowAAnks4eypdeBQuVEQ--.51354S2 1587005982,please see http://mail.163.com/help/help_spam_16.htm?ip=122.224.247.242&hostid=smtp13&time=1587005982')
+[ERROR2020-04-16 11-07-01]邮件发送失败(535, b'Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256')
+[ERROR2020-04-16 11-11-37]邮件发送失败(502, b'Invalid input from 122.224.247.242 to newxmesmtplogicsvrszc5.qq.com.', 'auto_test')

@@ -10,16 +10,16 @@ import os
 class Config:
 
     #标题
-    TITLE = "private_debug"
-    TITLE_EMAIL = 'mail'
+    TITLE = "test_config"
+    TITLE_EMAIL = 'email'
 
     #内容
-    TESTER = 'tester_ye'
+    TESTER = 'tester'
     ENVIRONMENT = 'environment'
     VERSION = 'version'
     HOST = 'host'
-    LOGIN_HOST = 'login_host'
-    LOGIN_INFO = 'login_info'
+    LOGIN_HOST = 'loginHost'
+    LOGIN_INFO = 'loginInfo'
 
     #邮件配置
     SMTP_SERVER = 'smtpserver'

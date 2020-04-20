@@ -44,8 +44,6 @@ def get_current_time():
     return time.strftime(MyLog.date,time.localtime(time.time()))
 
 
-
-
 class MyLog:
     #获取当前脚本文件父类的绝对路径（项目主目录）
     path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

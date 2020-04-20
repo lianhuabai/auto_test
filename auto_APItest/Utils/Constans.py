@@ -8,7 +8,7 @@ API_ENVIRONMENT_DEBUG = 'debug'
 API_ENVIRONMENT_RELEASE = 'release'
 
 #接口响应时间
-STRESS_LIST = []
+STRESS_LIST = [1,2,3]
 
 #接口执行结果
-RESULT_LIST = []
+RESULT_LIST = [1,2,3]

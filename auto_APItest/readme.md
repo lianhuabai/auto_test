@@ -44,7 +44,7 @@
 *日志封装./Utils/Log.py*  
 * 创建日志文件函数  
 ```
-#判断传入的路劲/文件是否存在
+#判断传入的路劲是否存在
 def create_file(file):
     path = file[0:file.rfind('/')]
     if not os.path.isdir(path):
