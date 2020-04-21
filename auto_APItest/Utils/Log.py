@@ -61,6 +61,13 @@ class MyLog:
 
     @staticmethod
     def debug(log_msg):
+        '''
+        添加写入日志的流
+        添加等级为debug的日志
+        移除日志流
+        :param log_msg:
+        :return:
+        '''
         add_handler('debug')
         logger.debug("[DEBUG" + get_current_time() + "]" + log_msg)
         remove_handler('debug')
