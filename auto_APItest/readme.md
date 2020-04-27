@@ -11,8 +11,8 @@
    * Requests.py 封装Requests请求方式
    * Email.py 邮件发送封装
    * Constans.py 变量
-   * Assert.py 断言
-   * Log.py 封装Log
+   * Assert.py 常用断言
+   * Log.py 封装Log日志打印
    * Token.py 登录token获取
 * Config 配置文件信息
 * Datas测试数据
@@ -67,5 +67,18 @@ handler = logging.FileHandler(log_file,encoding='utf-8')
         logger.warning("[WARNING" + get_current_time() + "]" + log_msg)
         remove_handler('WARNING')
         
+```
+* 封装requests的get、post请求  
+```
+    def post(self,url,headers,data):
+        try:
+            response = requests.post(url=url,headers=headers,data=data)
+
+        except requests.RequestException as e:
+            self.log.info("请求失败:"+ str(e)+"请求失败url"+ url)
+
+        response_time = response.elapsed.total_seconds()
+        Constans.STRESS_LIST.append(response_time)
+        return response.json()
 ```
 

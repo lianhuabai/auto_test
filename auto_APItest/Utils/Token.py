@@ -34,6 +34,6 @@ class Token:
         else:
             self.log.error('登录失败错误信息：'+ response)
 
-if __name__ == '__main__':
-    t = Token()
-    t.get_token()
+# if __name__ == '__main__':
+#     t = Token()
+#     t.get_token()
