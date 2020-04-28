@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcdb5be0-90aa-4002-86d1-36575498a81c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Utils/Assert.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Utils/Mock.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/Config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config/Config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/err.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/err.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/Constans.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Constans.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/Log.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/Requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Requests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/Token.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Token.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/Mock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Mock.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,23 +20,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/Token.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-              <folding>
-                <element signature="e#102#117#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="106">
-                <caret line="72" column="36" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
+              <first_editor relative-caret-position="500">
+                <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
               </first_editor>
               <second_editor />
             </state>
@@ -46,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Logs/log.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="229">
+              <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -55,8 +43,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils/Mock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="418">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/mock.pyi">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="48" column="26" lean-forward="true" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+              <folding>
+                <element signature="e#18#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils/Log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+            <state relative-caret-position="322">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="e#100#114#0" expanded="true" />
               </folding>
@@ -76,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Config/Config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="66" column="11" lean-forward="true" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
+            <state relative-caret-position="243">
+              <caret line="52" column="65" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
               <folding>
                 <element signature="e#103#140#0" expanded="true" />
               </folding>
@@ -85,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Utils/Constans.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+            <state relative-caret-position="225">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -97,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils/Requests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="818">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="e#105#128#0" expanded="true" />
               </folding>
@@ -106,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils/Assert.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="400">
+              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
               <folding>
                 <element signature="e#102#123#0" expanded="true" />
               </folding>
@@ -122,7 +122,7 @@
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -143,20 +143,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Config/__init__.py" />
-        <option value="$PROJECT_DIR$/Config/Config.py" />
         <option value="$PROJECT_DIR$/Logs/err.log" />
-        <option value="$PROJECT_DIR$/Utils/Constans.py" />
         <option value="$PROJECT_DIR$/Utils/Email.py" />
         <option value="$PROJECT_DIR$/Logs/log.log" />
         <option value="$PROJECT_DIR$/Config/config.ini" />
         <option value="$PROJECT_DIR$/run.py" />
         <option value="$APPLICATION_CONFIG_DIR$/pycharm64.exe.vmoptions" />
-        <option value="$PROJECT_DIR$/Utils/Mock.py" />
         <option value="$PROJECT_DIR$/Utils/Requests.py" />
-        <option value="$PROJECT_DIR$/readme.md" />
-        <option value="$PROJECT_DIR$/Utils/Log.py" />
         <option value="$PROJECT_DIR$/Utils/Token.py" />
         <option value="$PROJECT_DIR$/Utils/Assert.py" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/Utils/Log.py" />
+        <option value="$PROJECT_DIR$/Utils/Mock.py" />
+        <option value="$PROJECT_DIR$/Config/Config.py" />
+        <option value="$PROJECT_DIR$/Utils/Constans.py" />
       </list>
     </option>
   </component>
@@ -166,7 +166,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-248" />
     <option name="y" value="73" />
     <option name="width" value="957" />
@@ -180,6 +180,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,28 +191,12 @@
             <path>
               <item name="auto_APItest" type="b2602c69:ProjectViewProjectNode" />
               <item name="auto_APItest" type="462c0819:PsiDirectoryNode" />
-              <item name="Config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_APItest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_APItest" type="462c0819:PsiDirectoryNode" />
-              <item name="Logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_APItest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_APItest" type="462c0819:PsiDirectoryNode" />
-              <item name="TestCases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_APItest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_APItest" type="462c0819:PsiDirectoryNode" />
               <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -237,7 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Token">
+  <component name="RunManager" selected="Python.Mock">
     <configuration name="Email" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="auto_APItest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -282,6 +267,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Mock" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="auto_APItest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/Mock.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Token" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="auto_APItest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -306,9 +313,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Mock" />
+        <item itemvalue="Python.Log" />
         <item itemvalue="Python.Token" />
         <item itemvalue="Python.Email" />
-        <item itemvalue="Python.Log" />
       </list>
     </recent_temporary>
   </component>
@@ -344,18 +352,20 @@
       <workItem from="1587867936643" duration="2800000" />
       <workItem from="1587894855184" duration="2041000" />
       <workItem from="1587951884228" duration="3518000" />
-      <workItem from="1587968389045" duration="5439000" />
+      <workItem from="1587968389045" duration="6229000" />
+      <workItem from="1588038476030" duration="7161000" />
+      <workItem from="1588051245591" duration="8125000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110307000" />
+    <option name="totallyTimeSpent" value="126383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15458423" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -369,7 +379,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3264642" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3264642" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -377,6 +387,29 @@
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15458423" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42407808" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3264642" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -400,7 +433,8 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/auto_APItest$Email.coverage" NAME="Email Coverage Results" MODIFIED="1587006744250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/auto_APItest$Token.coverage" NAME="Token Coverage Results" MODIFIED="1587352846294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/auto_APItest$Log.coverage" NAME="Log Coverage Results" MODIFIED="1586766022448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/auto_APItest$Log.coverage" NAME="Log Coverage Results" MODIFIED="1588046119215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+    <SUITE FILE_PATH="coverage/auto_APItest$Mock.coverage" NAME="Mock Coverage Results" MODIFIED="1588065841635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/typing.pyi">
@@ -458,6 +492,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/Token.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+          <folding>
+            <element signature="e#102#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Utils/Email.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1075">
@@ -468,91 +512,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logs/log.log">
+    <entry file="file://$PROJECT_DIR$/Utils/Assert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/Mock.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="400">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="e#102#123#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="106">
-            <caret line="72" column="36" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/Requests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#105#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/Constans.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/Log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+        <state relative-caret-position="322">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="e#100#114#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/Token.py">
+    <entry file="file://$PROJECT_DIR$/Logs/log.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+        <state relative-caret-position="229">
+          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="500">
+            <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/mock.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="48" column="26" lean-forward="true" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
           <folding>
-            <element signature="e#102#117#0" expanded="true" />
+            <element signature="e#18#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/Mock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/Requests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="818">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#105#128#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Config/Config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="66" column="11" lean-forward="true" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
+        <state relative-caret-position="243">
+          <caret line="52" column="65" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
           <folding>
             <element signature="e#103#140#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/Assert.py">
+    <entry file="file://$PROJECT_DIR$/Utils/Constans.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding>
-            <element signature="e#102#123#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>

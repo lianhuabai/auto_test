@@ -7,3 +7,4 @@
 [ERROR2020-04-16 10-59-40]邮件发送失败(554, b'DT:SPM 163 smtp13,EcCowAAnks4eypdeBQuVEQ--.51354S2 1587005982,please see http://mail.163.com/help/help_spam_16.htm?ip=122.224.247.242&hostid=smtp13&time=1587005982')
 [ERROR2020-04-16 11-07-01]邮件发送失败(535, b'Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256')
 [ERROR2020-04-16 11-11-37]邮件发送失败(502, b'Invalid input from 122.224.247.242 to newxmesmtplogicsvrszc5.qq.com.', 'auto_test')
+[ERROR2020-04-28 11-44-33]This is error msessage

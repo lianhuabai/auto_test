@@ -7,6 +7,12 @@ import logging
 import os
 import time
 
+# 获取当前脚本文件父类的绝对路径（项目主目录）
+path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+log_file = path + '/Logs/log.log'
+err_file = path + '/Logs/err.log'
+date = '%Y-%m-%d %H-%M-%S'
+
 LEVELS = {
     'debug':logging.DEBUG,
     'info':logging.INFO,
@@ -17,6 +23,10 @@ LEVELS = {
 #初始化日志对象logger
 logger = logging.getLogger()
 level = 'default'
+
+# 实例化日志信息输出到磁盘文件上的流，指定文件路劲和编码
+handler = logging.FileHandler(log_file, encoding='utf-8')
+err_handler = logging.FileHandler(err_file, encoding='utf-8')
 
 def create_file(file):
     #路劲从右查询第一个/位置切片，获取log所在文件的路劲
@@ -31,33 +41,26 @@ def create_file(file):
 #为logger添加写入对应的handler
 def add_handler(levels):
     if levels == 'error':
-        logger.addHandler(MyLog.err_handler)
-    logger.addHandler(MyLog.handler)
+        logger.addHandler(err_handler)
+    logger.addHandler(handler)
 
 #调用log记录日志后移除logger中的handler，防止出现重复日志信息
 def remove_handler(levels):
     if levels == 'error':
-        logger.removeHandler(MyLog.err_handler)
-    logger.removeHandler(MyLog.handler)
-
+        logger.removeHandler(err_handler)
+    logger.removeHandler(handler)
+#获取当前时间
 def get_current_time():
-    return time.strftime(MyLog.date,time.localtime(time.time()))
+    return time.strftime(date,time.localtime(time.time()))
 
 
 class MyLog:
-    #获取当前脚本文件父类的绝对路径（项目主目录）
-    path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    log_file = path+'/Logs/log.log'
-    err_file = path+'/Logs/err.log'
-    #设置日志等级
-    logger.setLevel(LEVELS.get(level,logging.NOTSET))
+
+    #设置日志等级，设置默认日志等级notset所有等级
+    logger.setLevel(LEVELS.get('debug',logging.NOTSET))
     #创建日志文件
     create_file(log_file)
     create_file(err_file)
-    date = '%Y-%m-%d %H-%M-%S'
-    #实例化日志信息输出到磁盘文件上的流，指定文件路劲和编码
-    handler = logging.FileHandler(log_file,encoding='utf-8')
-    err_handler = logging.FileHandler(err_file,encoding='utf-8')
 
     @staticmethod
     def debug(log_msg):

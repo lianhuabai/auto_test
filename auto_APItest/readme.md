@@ -14,6 +14,7 @@
    * Assert.py 常用断言
    * Log.py 封装Log日志打印
    * Token.py 登录token获取
+   * Mock.py 自定义mock
 * Config 配置文件信息
 * Datas测试数据
 * TestCases 测试用例

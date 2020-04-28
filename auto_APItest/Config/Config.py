@@ -51,7 +51,6 @@ class Config:
         self.config.read(self.config_path,encoding='utf-8')
 
         self.tester = self.get_config(Config.TITLE,Config.TESTER)
-        self.environment = self.get_config(Config.TITLE,Config.ENVIRONMENT)
         self.verson = self.get_config(Config.TITLE,Config.VERSION)
         self.host = self.get_config(Config.TITLE,Config.HOST)
         self.login_host = self.get_config(Config.TITLE,Config.LOGIN_HOST)

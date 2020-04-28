@@ -3,9 +3,6 @@
 # @Author : tester_ye 
 # @File : Constans.py
 
-#接口全局变量
-API_ENVIRONMENT_DEBUG = 'debug'
-API_ENVIRONMENT_RELEASE = 'release'
 
 #接口响应时间
 STRESS_LIST = [1,2,3]
