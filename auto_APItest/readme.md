@@ -26,6 +26,13 @@
 *配置文件封装 ./Config/config.py*  
 * 封装定义ConfigParser  
 ```
+path_dir = str(os.path.abspath(os.path.join(os.path.dirname(__file__),os.pardir)))
+    '''
+    os.pardir 获取当前目录的父目录字符串名称 '..'
+    os.path.dirname(path)返回path的父路劲,__file__当前脚本运行的路劲
+    os.path.join(path,name)连接目录与文件名
+    os.path.abspath(name)返回脚本的绝对路劲
+    '''
 #实例化类ConfigParser
     config = ConfigParser()
 #配置文件读写方法

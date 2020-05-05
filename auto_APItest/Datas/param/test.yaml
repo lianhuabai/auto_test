@@ -1,0 +1,30 @@
+
+test:
+  desc: "测试数据"
+  parameter:
+    -
+      url: /Login
+      data:
+        -
+          username: 18781082900
+          password: tester1
+        -
+          username:18781082902
+          password:tester1
+      header: {
+                 "X-SITE-ID":"127",
+                 "Content-Type": "application/x-www-form-urlencoded"
+              }
+    -
+      url: /transfer
+      data:
+        -
+          username: 18781082901
+          password: tester1
+        -
+          username:18781082903
+          password:tester1
+      header: {
+                 "X-SITE-ID":"127",
+                 "Content-Type": "application/json"
+              }

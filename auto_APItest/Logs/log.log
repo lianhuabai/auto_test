@@ -30,3 +30,8 @@
 [ERROR2020-04-28 11-44-33]This is error msessage
 [WARNING2020-04-28 11-44-33]This is warning message
 [CRITICAL2020-04-28 11-44-33]This is critical message
+[DEBUG2020-04-29 12-58-36]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjowLCJleHAiOjE1ODgxNzk1MTh9.d7BZdXv50um-xdqUAzsLLoUh1ef96zFrtdCpnPUOXRA
+[INFO2020-04-29 12-58-36]请求异常：Invalid URL 'www.baidu.com': No schema supplied. Perhaps you meant http://www.baidu.com?请求失败urlwww.baidu.com
+[DEBUG2020-04-29 13-03-53]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjowLCJleHAiOjE1ODgxNzk4MzV9.4OCikhaiykeYRWeNgjYsTQEDO2trZIhVWuk0GSvqCQU
+[INFO2020-04-29 13-03-53]请求异常：Invalid URL 'www.baidu.com': No schema supplied. Perhaps you meant http://www.baidu.com?请求失败urlwww.baidu.com
+[INFO2020-04-29 13-04-51]请求异常：Invalid URL 'www.baidu.com': No schema supplied. Perhaps you meant http://www.baidu.com?请求失败urlwww.baidu.com
