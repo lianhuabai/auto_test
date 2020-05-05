@@ -37,9 +37,9 @@ class TestBasic:
         headers = data.header
 
         api_url = host + urls[0]
-        response = request.get_request(api_url, params[0], headers[0])
+        response = request.get(api_url, params[0], headers[0])
 
-        assert _assert.assert_code(response['code'], 401)
-        assert _assert.assert_body(response['body'], 'error', u'继续操作前请注册或者登录.')
-        assert _assert.assert_time(response['time_consuming'], 100)
+        assert _assert.assert_status(response['response_code'], 200)
+        assert _assert.assert_in_body(response['response_body'], 'hhhh')
+        assert _assert.assert_time(response['response_time'], 100)
         Constans.RESULT_LIST.append('True')
