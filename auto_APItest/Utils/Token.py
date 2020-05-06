@@ -14,15 +14,10 @@ class Token:
         self.log = Log.MyLog()
 
     def get_token(self):
-
-        headers = {
-            "Content-Type":"application/x-www-form-urlencoded",
-            "X-SITE-ID":"127"
-        }
-
+        #读取数据类型为str，json.loads()转化为json字典
+        headers = json.loads(self.config.login_headers)
         url = self.config.login_host
         body = json.loads(self.config.login_info)
-        print(type(body))
         response = requests.post(url=url,data=body,headers=headers)
         res_json = response.json()
 
@@ -34,6 +29,6 @@ class Token:
         else:
             self.log.error('登录失败错误信息：'+ response)
 
-# if __name__ == '__main__':
-#     t = Token()
-#     t.get_token()
+if __name__ == '__main__':
+    t = Token()
+    t.get_token()

@@ -36,3 +36,4 @@
 [INFO2020-04-29 13-03-53]请求异常：Invalid URL 'www.baidu.com': No schema supplied. Perhaps you meant http://www.baidu.com?请求失败urlwww.baidu.com
 [INFO2020-04-29 13-04-51]请求异常：Invalid URL 'www.baidu.com': No schema supplied. Perhaps you meant http://www.baidu.com?请求失败urlwww.baidu.com
 [ERROR2020-05-06 13-10-37]数据库查询错误，错误信息:%d format: a number is required, not str
+[DEBUG2020-05-06 15-08-12]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjowLCJleHAiOjE1ODg3OTIwOTN9._GlH9RgLgVHdFKdgiJF4g0w_kmnFKvGuQ4NJcdx-y6w

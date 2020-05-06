@@ -23,13 +23,13 @@ class TestBasic:
     @allure.feature('Home')
     @allure.severity('blocker')
     @allure.story('Test')
-    def test_001(self, action):
+    def test_001(self):
 
         #实例化配置文件读取类、断言类、测试数据类
         config = Config()
         data = Test()
         _assert = Assert.Assert()
-        request = Requests.Request(action)
+        request = Requests.Request()
         #读取host,读取url,data,headers
         host = config.host
         urls = data.url

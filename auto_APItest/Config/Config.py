@@ -16,9 +16,10 @@ class Config:
 
     #登录配置
     TESTER = 'tester'
-    HOST = 'host'
+    FRONT_HOST = 'front_host'
     LOGIN_HOST = 'loginHost'
     LOGIN_INFO = 'loginInfo'
+    LOGIN_HEADERS = 'headers'
 
     #邮件配置
     SMTP_SERVER = 'smtpserver'
@@ -57,9 +58,10 @@ class Config:
         self.config.read(self.config_path,encoding='utf-8')
 
         self.tester = self.get_config(Config.TITLE,Config.TESTER)
-        self.host = self.get_config(Config.TITLE,Config.HOST)
+        self.front_host = self.get_config(Config.TITLE,Config.FRONT_HOST)
         self.login_host = self.get_config(Config.TITLE,Config.LOGIN_HOST)
         self.login_info = self.get_config(Config.TITLE,Config.LOGIN_INFO)
+        self.login_headers = self.get_config(Config.TITLE,Config.LOGIN_HEADERS)
         #邮件配置信息读取
         self.smtpserver = self.get_config(Config.TITLE_EMAIL,Config.SMTP_SERVER)
         self.sender = self.get_config(Config.TITLE_EMAIL,Config.SENDER)
