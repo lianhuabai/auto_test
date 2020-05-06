@@ -11,7 +11,7 @@ test2:
         -
           username:13700000001
           password:a1234567
-      header: {
+      headers: {
                  "X-SITE-ID":"127",
                  "Content-Type": "application/x-www-form-urlencoded"
               }
@@ -24,7 +24,7 @@ test2:
         -
           username:13700000003
           password:tester1
-      header: {
+      headers: {
                  "X-SITE-ID":"127",
                  "Content-Type": "application/json"
               }

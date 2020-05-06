@@ -11,7 +11,7 @@ test:
         -
           username:18781082902
           password:tester1
-      header: {
+      headers: {
                  "X-SITE-ID":"127",
                  "Content-Type": "application/x-www-form-urlencoded"
               }
@@ -24,7 +24,7 @@ test:
         -
           username:18781082903
           password:tester1
-      header: {
+      headers: {
                  "X-SITE-ID":"127",
                  "Content-Type": "application/json"
               }

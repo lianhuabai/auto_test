@@ -3,6 +3,8 @@
 # @Author : tester_ye 
 # @File : params.py
 
+#获取类数据
+
 import os
 from Datas import Read_yaml
 from Utils import Log

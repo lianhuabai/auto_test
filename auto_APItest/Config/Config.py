@@ -12,11 +12,10 @@ class Config:
     #标题
     TITLE = "test_config"
     TITLE_EMAIL = 'email'
+    TITILE_DB = 'mysql'
 
-    #内容
+    #登录配置
     TESTER = 'tester'
-    ENVIRONMENT = 'environment'
-    VERSION = 'version'
     HOST = 'host'
     LOGIN_HOST = 'loginHost'
     LOGIN_INFO = 'loginInfo'
@@ -27,6 +26,13 @@ class Config:
     RECEIVER = 'receiver'
     USERNAME = 'username'
     PASSWORD = 'password'
+
+    #sql配置
+    DB_DIR = 'host'
+    DB_PORT = 'port'
+    DB_USER = 'user'
+    DB_PASSWORD = 'password'
+
 
     path_dir = str(os.path.abspath(os.path.join(os.path.dirname(__file__),os.pardir)))
     '''
@@ -51,16 +57,21 @@ class Config:
         self.config.read(self.config_path,encoding='utf-8')
 
         self.tester = self.get_config(Config.TITLE,Config.TESTER)
-        self.verson = self.get_config(Config.TITLE,Config.VERSION)
         self.host = self.get_config(Config.TITLE,Config.HOST)
         self.login_host = self.get_config(Config.TITLE,Config.LOGIN_HOST)
         self.login_info = self.get_config(Config.TITLE,Config.LOGIN_INFO)
-
+        #邮件配置信息读取
         self.smtpserver = self.get_config(Config.TITLE_EMAIL,Config.SMTP_SERVER)
         self.sender = self.get_config(Config.TITLE_EMAIL,Config.SENDER)
         self.receiver = self.get_config(Config.TITLE_EMAIL,Config.RECEIVER)
         self.username = self.get_config(Config.TITLE_EMAIL,Config.USERNAME)
         self.password = self.get_config(Config.TITLE_EMAIL,Config.PASSWORD)
+        #sql配置信息读取
+        self.sql_host = self.get_config(Config.TITILE_DB,Config.DB_DIR)
+        self.sql_port = self.get_config(Config.TITILE_DB,Config.DB_PORT)
+        self.sql_user = self.get_config(Config.TITILE_DB,Config.DB_USER)
+        self.sql_password = self.get_config(Config.TITILE_DB,Config.DB_PASSWORD)
+
 
     def get_config(self,title,value):
         '''

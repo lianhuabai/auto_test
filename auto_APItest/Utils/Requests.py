@@ -3,10 +3,10 @@
 # @Author : tester_ye 
 # @File : Requests.py
 
-from Utils import Token
 import requests
 from Utils import Log
-from Utils import Constans
+from Datas import Constans
+
 
 class Request:
     def __init__(self):

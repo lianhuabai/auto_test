@@ -8,7 +8,7 @@ import allure
 from Datas.params import Test
 from Config.Config import Config
 from Utils import Requests
-from Utils import Constans
+from Datas import Constans
 from Utils import Assert
 
 

@@ -11,4 +11,9 @@ from Config import Config
 if __name__ == '__main__':
     cofig = Config.Config()
     log = Log.MyLog()
-    log.info('初始化文件，path = ' + cofig.config_path)
+
+    pytest.main(['-s','-v','--alluredir','./Reports/xml'])
+#
+#     #生成html测试报告
+#     #allure generaten ./Reports -o Reports/html --clean
+

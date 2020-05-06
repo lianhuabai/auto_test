@@ -3,7 +3,7 @@
 # @Author : tester_ye 
 # @File : Assert.py
 from Utils import Log
-from Utils import Constans
+from Datas import Constans
 import json
 
 class Assert:
