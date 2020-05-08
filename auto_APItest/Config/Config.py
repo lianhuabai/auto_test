@@ -75,7 +75,7 @@ class Config:
         self.sql_password = self.get_config(Config.TITILE_DB,Config.DB_PASSWORD)
 
 
-    def get_config(self,title,value):
+    def get_config(self,title,key):
         '''
         配置文件读取
         :data self:
@@ -83,9 +83,9 @@ class Config:
         :data value:
         :return:
         '''
-        return self.config.get(title,value)
+        return self.config.get(title,key)
 
-    def set_config(self,title,value,text):
+    def set_config(self,title,key,value):
         '''
         配置文件更新
         :data self:
@@ -94,13 +94,13 @@ class Config:
         :data text:
         :return:
         '''
-        self.config.set(title,value,text)
+        self.config.set(title,key,value)
         with open(self.congfig_path,'wb') as f:
             return self.config.write(f)
 
     def add_config(self,title):
         '''
-        配置文件添加
+        配置文件title添加
         :data title:
         :return:
         '''

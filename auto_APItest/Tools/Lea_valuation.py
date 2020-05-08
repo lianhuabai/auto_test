@@ -74,7 +74,7 @@ class Lae:
         # print(symbol)
         for sym,pri in symbol.items():
             base = sym[sym.rfind('_') + 1:len(sym)]
-
+            #交易对属于各个交易区的价格折算存入price
             if base == 'CNT':
                 price[sym] = str(pri)
             elif base == 'BTC':
@@ -84,7 +84,7 @@ class Lae:
             elif base == 'USDT':
                 price[sym] = str(self.USDT_CNT*decimal.Decimal(pri))
 
-        print("兑换币种{0}的价格为:{1}".format(sym,pri))
+        print("兑换币种{0}的价格为:{1}".format(fromasset,symbol))
         print("兑换币种在各交易区折算CNT最高价为:{0}".format(price[max(price, key=price.get)]))
         #返回兑换币种各个交易区最大CNT价格
         return (price[max(price, key=price.get)])
@@ -107,17 +107,26 @@ class Lae:
         :data valuation: 估值币种
         :return:
         '''
-        from_asset_price = decimal.Decimal(self.asset_exchange(from_asset))
-        to_asset_price = self.exchange_cnt(toasset)
-        num_dec = decimal.Decimal(num)
-        deel_fe = decimal.Decimal(deel_fee)
+        try:
+            from_asset_price = decimal.Decimal(self.asset_exchange(from_asset))
+            to_asset_price = self.exchange_cnt(toasset)
+            num_dec = decimal.Decimal(num)
+            deel_fe = decimal.Decimal(deel_fee)
+        except Exception as e:
+            print(e)
+            raise
 
         # 估值交易对估值
-        valuation_price = num_dec*from_asset_price/self.BTC_CNT
-        # 兑换交易对估值
-        exchange_price = num_dec*from_asset_price/to_asset_price
-        #折扣扣除
-        deel = exchange_price*deel_fe
+        print("比特币价格为:{}".format(self.BTC_CNT))
+        try:
+            valuation_price = num_dec*from_asset_price/self.BTC_CNT
+            # 兑换交易对估值
+            exchange_price = num_dec*from_asset_price/to_asset_price
+            #折扣扣除
+            deel = exchange_price*deel_fe
+        except Exception as e:
+            print(e)
+            raise
 
         print("{0}的BTC估值为:{1}".format(from_asset,round(valuation_price,8)))
         print("{0}可兑换{1}个{2}".format(from_asset,round(exchange_price,8),toasset))
@@ -126,4 +135,4 @@ class Lae:
 
 if __name__ == '__main__':
     l = Lae()
-    l.exchange_price('VOLLAR','ZT',1780.55243487,0.5555)
+    l.exchange_price('ETC','ZT',149500,0.5555)
