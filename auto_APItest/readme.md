@@ -10,13 +10,19 @@
 * Utils 自定义封装类
    * Requests.py 封装Requests请求方式
    * Email.py 邮件发送封装
-   * Constans.py 变量
    * Assert.py 常用断言
    * Log.py 封装Log日志打印
    * Token.py 登录token获取
    * Mock.py 自定义mock
-* Config 配置文件信息
+* Config 配置文件信息  
+    * Config.py 封装ConfigParser文件读取
+    * config.ini 配置文件
 * Datas测试数据
+    * data 存放yaml测试数据文件夹
+    * datas.py 测试数据以类的形式封装
+    * Read_yaml.py 封装读取yaml文件
+    * Constans.py 全局变量
+* Tools 测试工具类文件夹
 * TestCases 测试用例
 * Reports 测试报告文档
 * Logs 日志文件
@@ -76,7 +82,7 @@ handler = logging.FileHandler(log_file,encoding='utf-8')
         remove_handler('WARNING')
         
 ```
-* 封装requests的get、post请求  
+*Utils/Requests.py封装requests的get、post请求* 
 ```
     def post(self,url,headers,data):
         try:
@@ -88,5 +94,52 @@ handler = logging.FileHandler(log_file,encoding='utf-8')
         response_time = response.elapsed.total_seconds()
         Constans.STRESS_LIST.append(response_time)
         return response.json()
+```
+*Utils/Email.py 邮件发送*
+```
+    try:
+        smtp = smtplib.SMTP()
+        smtp.connect(smtpserver)
+        smtp.login(username,password)
+        smtp.sendmail(sender,receiver,message.as_string())
+    except smtplib.SMTPException as e:
+        self.log.error("邮件发送失败" + str(e))
+
+    else:
+        self.log.info("邮件发送成功")
+```
+*Utils/Assert.py 断言封装*
+```
+    def assert_status(self,code,assert_code):
+        '''
+        请求响应状态码断言
+        :data code:
+        :data assert_code:
+        :return:
+        '''
+        try:
+            assert code == assert_code
+            return True
+        except:
+            self.log.error("请求状态码对比失败,请求状态码为:{0},断言状态码为:{1}".format(code,assert_code))
+            Constans.RESULT_LIST.append('fail')
+            raise
+```
+*Datas/Read_yaml.py 读取yaml文件方法封装*
+```
+    def get_data_list():
+        data_list = {}
+        #读取原始测试数据
+        data_yaml = parse()
+        for page, value in data_yaml.items():
+            #获取字典中参数
+            parameters = value['parameter']
+            list = []
+            for parameter in parameters:
+                print(parameter)
+                list.append(parameter)
+            data_list[page] = list
+        print(data_list)
+        return data_list
 ```
 

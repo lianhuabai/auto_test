@@ -19,16 +19,17 @@ class Request:
     def get(self,url,headers,data):
         '''
         get请求封装
-        :param url:
-        :param headers:
-        :param data:
+        :data url:
+        :data headers:
+        :data data:
         :return:
         '''
         try:
             response = requests.get(url=url,headers=headers,params=data)
 
         except requests.RequestException as e:
-            self.log.info("请求异常：" + str(e)+"请求失败url"+ url)
+            self.log.error("请求异常：" + str(e)+"请求失败url"+ url)
+
         #获取响应时间
         response_time = response.elapsed.total_seconds()
         response_code = response.status_code
@@ -39,15 +40,14 @@ class Request:
         response_data['response_body'] = response_body
 
         Constans.STRESS_LIST.append(response_time)
-        print(response_data)
         return response_data
 
     def post(self,url,headers,data):
         '''
         post请求封装
-        :param url:
-        :param headers:
-        :param data:
+        :data url:
+        :data headers:
+        :data data:
         :return:
         '''
         try:

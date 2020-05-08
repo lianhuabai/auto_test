@@ -10,7 +10,7 @@ import yaml
 
 
 def parse():
-    path = str(os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))) + '/Datas/Param'
+    path = str(os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))) + '/Datas/data'
     data_yaml = {}
     #os.walk方法，主要用来遍历一个目录内各个子目录和子文件
     #返回的是一个三元组(root, dirs, files)

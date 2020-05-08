@@ -14,8 +14,8 @@ class Assert:
     def assert_status(self,code,assert_code):
         '''
         请求响应状态码断言
-        :param code:
-        :param assert_code:
+        :data code:
+        :data assert_code:
         :return:
         '''
         try:
@@ -29,8 +29,8 @@ class Assert:
     def assert_body(self,body,assert_body):
         '''
         请求响应body断言
-        :param body:
-        :param assert_body:
+        :data body:
+        :data assert_body:
         :return:
         '''
         try:
@@ -44,8 +44,8 @@ class Assert:
     def assert_in_body(self,body,assert_text):
         '''
         响应信息断言
-        :param body:
-        :param assert_text:
+        :data body:
+        :data assert_text:
         :return:
         '''
         try:
@@ -61,8 +61,8 @@ class Assert:
     def assert_time(self,time,assert_time):
         '''
         响应时间断言
-        :param time:
-        :param assert_time:
+        :data time:
+        :data assert_time:
         :return:
         '''
         try:

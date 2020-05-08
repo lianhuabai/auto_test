@@ -5,7 +5,7 @@
 
 import allure
 
-from Datas.params import Test
+from Datas.datas import Test
 from Config.Config import Config
 from Utils import Requests
 from Datas import Constans

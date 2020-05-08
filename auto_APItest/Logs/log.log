@@ -37,3 +37,8 @@
 [INFO2020-04-29 13-04-51]请求异常：Invalid URL 'www.baidu.com': No schema supplied. Perhaps you meant http://www.baidu.com?请求失败urlwww.baidu.com
 [ERROR2020-05-06 13-10-37]数据库查询错误，错误信息:%d format: a number is required, not str
 [DEBUG2020-05-06 15-08-12]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjowLCJleHAiOjE1ODg3OTIwOTN9._GlH9RgLgVHdFKdgiJF4g0w_kmnFKvGuQ4NJcdx-y6w
+[INFO2020-05-06 17-06-10]请求异常：Value for header {X-SITE-ID: 127} must be of type str or bytes, not <class 'int'>请求失败urlhttp://47.97.206.151:8883/v1/exchangeTickers
+[INFO2020-05-06 17-16-57]请求异常：Value for header {X-SITE-ID: 127} must be of type str or bytes, not <class 'int'>请求失败urlhttp://47.97.206.151:8883/v1/exchangeTickers
+[ERROR2020-05-06 17-20-13]请求异常：Value for header {X-SITE-ID: 127} must be of type str or bytes, not <class 'int'>请求失败urlhttp://47.97.206.151:8883/api/v1/exchangeTickers
+[INFO2020-05-08 12-11-05]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[INFO2020-05-08 12-11-17]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml

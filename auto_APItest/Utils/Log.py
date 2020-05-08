@@ -68,7 +68,7 @@ class MyLog:
         添加写入日志的流
         添加等级为debug的日志
         移除日志流
-        :param log_msg:
+        :data log_msg:
         :return:
         '''
         add_handler('debug')

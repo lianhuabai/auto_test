@@ -9,3 +9,5 @@
 [ERROR2020-04-16 11-11-37]邮件发送失败(502, b'Invalid input from 122.224.247.242 to newxmesmtplogicsvrszc5.qq.com.', 'auto_test')
 [ERROR2020-04-28 11-44-33]This is error msessage
 [ERROR2020-05-06 13-10-37]数据库查询错误，错误信息:%d format: a number is required, not str
+[ERROR2020-05-06 17-20-13]请求异常：Value for header {X-SITE-ID: 127} must be of type str or bytes, not <class 'int'>请求失败urlhttp://47.97.206.151:8883/api/v1/exchangeTickers
+[ERROR2020-05-07 16-58-50]This is error msessage

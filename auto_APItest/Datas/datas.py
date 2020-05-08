@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*- 
 # @Create_Time : 2019/5/1 23:24
 # @Author : tester_ye 
-# @File : params.py
+# @File : datas.py
 
 #获取类数据
 
@@ -31,5 +31,8 @@ class Test:
     for i in range(0, len(params)):
         url.append(params[i]['url'])
         data.append(params[i]['data'])
-        header.append(params[i]['header'])
+        header.append(params[i]['headers'])
 
+if __name__ == '__main__':
+    t = Test()
+    print(t.url)

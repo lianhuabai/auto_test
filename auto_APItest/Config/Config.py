@@ -78,9 +78,9 @@ class Config:
     def get_config(self,title,value):
         '''
         配置文件读取
-        :param self:
-        :param title:
-        :param value:
+        :data self:
+        :data title:
+        :data value:
         :return:
         '''
         return self.config.get(title,value)
@@ -88,10 +88,10 @@ class Config:
     def set_config(self,title,value,text):
         '''
         配置文件更新
-        :param self:
-        :param title:
-        :param value:
-        :param text:
+        :data self:
+        :data title:
+        :data value:
+        :data text:
         :return:
         '''
         self.config.set(title,value,text)
@@ -101,7 +101,7 @@ class Config:
     def add_config(self,title):
         '''
         配置文件添加
-        :param title:
+        :data title:
         :return:
         '''
         self.config.add_section(title)
