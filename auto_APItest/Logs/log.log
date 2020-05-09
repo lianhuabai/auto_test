@@ -42,3 +42,6 @@
 [ERROR2020-05-06 17-20-13]请求异常：Value for header {X-SITE-ID: 127} must be of type str or bytes, not <class 'int'>请求失败urlhttp://47.97.206.151:8883/api/v1/exchangeTickers
 [INFO2020-05-08 12-11-05]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
 [INFO2020-05-08 12-11-17]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[ERROR2020-05-09 12-31-18]数据库查询错误，错误信息:(2003, "Can't connect to MySQL server on '47.97.206.151' (timed out)")
+[ERROR2020-05-09 12-31-40]数据库查询错误，错误信息:(2003, "Can't connect to MySQL server on '47.97.206.151' (timed out)")
+[ERROR2020-05-09 12-32-04]数据库查询错误，错误信息:(2003, "Can't connect to MySQL server on '47.97.206.151' (timed out)")

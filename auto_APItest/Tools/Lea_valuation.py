@@ -135,4 +135,4 @@ class Lae:
 
 if __name__ == '__main__':
     l = Lae()
-    l.exchange_price('ETC','ZT',149500,0.5555)
+    l.exchange_price('ETH','ZT',300,0.5555)

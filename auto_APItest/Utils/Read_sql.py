@@ -34,12 +34,18 @@ class SQL:
                 reslut = cursor.fetchmany(num)
             elif type == 2:
                 reslut = cursor.fetchall()
-            return reslut
+
             #关闭数据库连接
             cursor.close()
             mysql.close()
+
+            return reslut
 
         except Exception as e:
             self.log.error("数据库查询错误，错误信息:{0}".format(e))
             raise
 
+if __name__ == '__main__':
+    sql = 'select `activity_name` from activity.activities where `type` = 7'
+    sq = SQL()
+    print(sq.read_mysql(sql = sql,type=2))
