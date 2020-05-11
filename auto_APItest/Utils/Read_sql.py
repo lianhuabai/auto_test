@@ -14,6 +14,12 @@ class SQL:
         self.log = Log.MyLog()
 
     def read_mysql(self,sql,type = 0,num = 10):
+        '''
+        :param sql: 查询sql语句
+        :param type: 查询类型,0为默认返回一条，1返回指定条数num,2返回所有数据
+        :param num: 查询返回条数
+        :return:
+        '''
         host = self.config.sql_host
         port = int(self.config.sql_port)
         user = self.config.sql_user

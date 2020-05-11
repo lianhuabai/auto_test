@@ -19,9 +19,9 @@ class Request:
     def get(self,url,headers,data):
         '''
         get请求封装
-        :data url:
-        :data headers:
-        :data data:
+        :data url:接口地址
+        :data headers:请求头
+        :data data:请求参数
         :return:
         '''
         try:
@@ -45,9 +45,9 @@ class Request:
     def post(self,url,headers,data):
         '''
         post请求封装
-        :data url:
-        :data headers:
-        :data data:
+        :data url:接口地址
+        :data headers:请求头
+        :data data:请求数据
         :return:
         '''
         try:

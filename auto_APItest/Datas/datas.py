@@ -20,7 +20,6 @@ def get_parameter(name):
     param = data[name]
     return param
 
-
 class Test:
     #读取测试数据后封装
     log.info('解析yaml, Path:' + path_dir + '/Datas/Param/test.yaml')

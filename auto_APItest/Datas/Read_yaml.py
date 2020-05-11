@@ -28,7 +28,6 @@ def parse():
                 data_yaml.update(page)
         return data_yaml
 
-
 class GetPages:
     @staticmethod
     def get_data_list():
@@ -45,7 +44,6 @@ class GetPages:
             data_list[page] = list
         print(data_list)
         return data_list
-
 
 if __name__ == '__main__':
     lists = GetPages.get_data_list()

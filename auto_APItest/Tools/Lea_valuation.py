@@ -12,15 +12,6 @@ from Utils import Requests
 import json
 import decimal
 
-# from Utils import Read_sql
-#
-# sql = 'select `activity_name` from activity.activities where `type` = 22'
-#
-# sq = Read_sql.SQL()
-#
-# print(sq.read_mysql(sql = sql))
-# print(type(sq.read_mysql(sql = sql)))
-
 request = Requests.Request()
 headers = {
     "X-SITE-ID":"127"
@@ -31,18 +22,24 @@ r_json = json.loads(r['response_body'])
 tickers = r_json['result']['ticker']
 print(tickers)
 
-#获取各交易区基准币种兑换CNT价格
-def convert():
+#获取指定交易对最新价格
+def convert(symbol):
+    '''
+    :param symbol: 交易对
+    :return:
+    '''
     symbols = {}
     for i in tickers:
-        symbols_list = ['ETH_CNT', 'BTC_CNT', 'USDT_CNT']
-        if i['symbol'] in symbols_list:
+        if i['symbol'] == symbol:
             symbols[i['symbol']] = i['last']
-
-    return(symbols)
+    return(decimal.Decimal(symbols[symbol]))
 
 #获取兑换币种所有的交易对以及价格
 def exchange(fromasset):
+    '''
+    :param fromasset: 兑换币种
+    :return:币种所有交易对以及价格dict
+    '''
     len_fromasset = len(fromasset)
     symbol = {}
     for i in tickers:
@@ -55,61 +52,81 @@ def exchange(fromasset):
 
 #价格折算
 class Lae:
-    #币种所有交易对及价格
-    # symbol = exchange()
 
-    # 交易区基础交易币兑换CNT价格
-    # 交易区基础币种折算CNT价格
-
-    symbols = convert()
-    BTC_CNT = decimal.Decimal(symbols['BTC_CNT'])
-    ETH_CNT = decimal.Decimal(symbols['ETH_CNT'])
-    USDT_CNT = decimal.Decimal(symbols['USDT_CNT'])
-
+    #兑换币种所有交易对最高价
     @classmethod
-    def asset_exchange(self,fromasset):
+    def asset_exchange(self,fromasset,lea_base):
+        '''
+        :param fromasset: 兑换币种
+        :param lea_base: 估值/兑换币种基准币种
+        :return:
+        '''
 
         price = {}
         symbol = exchange(fromasset)
         # print(symbol)
+        dec = decimal.Decimal
         for sym,pri in symbol.items():
             base = sym[sym.rfind('_') + 1:len(sym)]
             #交易对属于各个交易区的价格折算存入price
-            if base == 'CNT':
-                price[sym] = str(pri)
-            elif base == 'BTC':
-                price[sym] = str(self.BTC_CNT*decimal.Decimal(pri))
-            elif base == 'ETH':
-                price[sym] = str(self.ETH_CNT*decimal.Decimal(pri))
-            elif base == 'USDT':
-                price[sym] = str(self.USDT_CNT*decimal.Decimal(pri))
+            if lea_base == 'CNT':
+                if base == 'CNT':
+                    price[sym] = dec(pri)
+                elif base == 'BTC':
+                    price[sym] = convert('BTC_CNT')*dec(pri)
+                elif base == 'ETH':
+                    price[sym] = convert('ETH_CNT')*dec(pri)
+                elif base == 'USDT':
+                    price[sym] = convert('USDT_CNT')*dec(pri)
+            elif lea_base == 'USDT':
+                if base == 'CNT':
+                    price[sym] = dec(pri)/convert('USDT_CNT')
+                elif base == 'BTC':
+                    price[sym] = convert('BTC_USDT')*dec(pri)
+                elif base == 'ETH':
+                    price[sym] = convert('ETH_USDT')*dec(pri)
+                elif base == 'USDT':
+                    price[sym] = dec(pri)
+            elif lea_base == 'ETH':
+                if base == 'ETH':
+                    price[sym] = dec(pri)
+                elif base == 'BTC':
+                    price[sym] = convert('BTC_ETH')*dec(pri)
+                elif base == 'USDT':
+                    price[sym] = dec(pri)/convert('ETH_USDT')
+                elif base == 'CNT':
+                    price[sym] = dec(pri)/convert('ETH_CNT')
+            elif lea_base == 'BTC':
+                if base == 'BTC':
+                    price[sym] = dec(pri)
+                elif base == 'CNT':
+                    price[sym] = dec(pri)/convert('BTC_CNT')
+                elif base == 'USDT':
+                    price[sym] = dec(pri)/convert('BTC_USDT')
+                elif base == 'ETH':
+                    price[sym] = dec(pri)/convert('BTC_ETH')
 
         print("兑换币种{0}的价格为:{1}".format(fromasset,symbol))
-        print("兑换币种在各交易区折算CNT最高价为:{0}".format(price[max(price, key=price.get)]))
+        print("兑换币种在各交易区折算{0}最高价为:{1}".format(lea_base,price[max(price, key=price.get)]))
         #返回兑换币种各个交易区最大CNT价格
         return (price[max(price, key=price.get)])
 
-    # 兑换目标币种CNT价格
-    @classmethod
-    def exchange_cnt(self,to_ex_asset):
-        toasset = to_ex_asset+"_CNT"
-        for i in tickers:
-            if i['symbol'] == toasset:
-                exchange_cnt_price = i['last']
-        #返回兑换币种CNT价格
-        return (decimal.Decimal(exchange_cnt_price))
-
 
     @classmethod
-    def exchange_price(self,from_asset,toasset,num,deel_fee):
+    def exchange_price(self,from_asset,toasset,num,deel_fee,lea_asset,lea_base):
         '''
-        :data toasset: 兑换币种
-        :data valuation: 估值币种
+        :param from_asset: 待兑换币种
+        :param toasset: 兑换交易对
+        :param num: 数量
+        :param deel_fee: 手续费
+        :param lea_asset: 估值交易对
         :return:
         '''
         try:
-            from_asset_price = decimal.Decimal(self.asset_exchange(from_asset))
-            to_asset_price = self.exchange_cnt(toasset)
+            #待兑换币种最高价格
+            from_asset_price = decimal.Decimal(self.asset_exchange(from_asset,lea_base))
+            # 兑换币种交易对价格
+            to_asset_price = convert(toasset)
             num_dec = decimal.Decimal(num)
             deel_fe = decimal.Decimal(deel_fee)
         except Exception as e:
@@ -117,22 +134,22 @@ class Lae:
             raise
 
         # 估值交易对估值
-        print("比特币价格为:{}".format(self.BTC_CNT))
+        print("估值交易对为:{0}价格为:{1}".format(lea_asset,convert(lea_asset)))
         try:
-            valuation_price = num_dec*from_asset_price/self.BTC_CNT
-            # 兑换交易对估值
+            #估值
+            valuation_price = num_dec*from_asset_price/convert(lea_asset)
+            # 兑换交易对数量
             exchange_price = num_dec*from_asset_price/to_asset_price
             #折扣扣除
             deel = exchange_price*deel_fe
         except Exception as e:
             print(e)
             raise
-
+        to_symbol = toasset[0:toasset.rfind('_')]
+        print("兑换币种{0}的价格为:{1}".format(toasset,convert(toasset)))
         print("{0}的BTC估值为:{1}".format(from_asset,round(valuation_price,8)))
-        print("{0}可兑换{1}个{2}".format(from_asset,round(exchange_price,8),toasset))
-        print("预计扣除手续费{0}{1}".format(round(deel,8),toasset))
-
+        print("{0}可兑换{1}个{2}".format(from_asset,round(exchange_price,8),to_symbol))
+        print("预计扣除手续费{0}{1}".format(round(deel,8),to_symbol))
 
 if __name__ == '__main__':
-    l = Lae()
-    l.exchange_price('ETH','ZT',300,0.5555)
+    Lae.exchange_price('SIPC','ETH_USDT',21362,0.5555,'BTC_USDT','USDT')
