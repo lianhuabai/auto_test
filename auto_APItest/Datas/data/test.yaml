@@ -3,14 +3,15 @@ test:
   desc: "测试数据"
   parameter:
     -
-      url: /Login
+      url: /api/v1/user/trade/limit
       data:
         -
           username: 18781082900
           password: tester1
-        -
-          username:18781082902
-          password:tester1
+
+        - username1: 18781082900
+          password1: tester1
+
       headers: {
                  "X-SITE-ID":"127",
                  "Content-Type": "application/x-www-form-urlencoded"
@@ -21,9 +22,10 @@ test:
         -
           username: 18781082901
           password: tester1
-        -
-          username:18781082903
-          password:tester1
+
+        - username1: 18781082901
+          password1: tester1
+
       headers: {
                  "X-SITE-ID":"127",
                  "Content-Type": "application/json"

@@ -17,7 +17,6 @@ headers = {
     "X-SITE-ID":"127"
 }
 r = request.get(url='http://47.97.206.151:8883/api/v1/exchangeTickers',headers=headers,data=None)
-# r = request.get(url='http://www.baidu.com',headers=None,data=None)
 r_json = json.loads(r['response_body'])
 tickers = r_json['result']['ticker']
 print(tickers)
@@ -53,10 +52,10 @@ def exchange(fromasset):
 #价格折算
 class Lae:
 
-    #兑换币种所有交易对最高价
     @classmethod
     def asset_exchange(self,fromasset,lea_base):
         '''
+        兑换币种所有交易对最高价
         :param fromasset: 兑换币种
         :param lea_base: 估值/兑换币种基准币种
         :return:
@@ -137,7 +136,7 @@ class Lae:
         print("估值交易对为:{0}价格为:{1}".format(lea_asset,convert(lea_asset)))
         try:
             #估值
-            valuation_price = num_dec*from_asset_price/convert(lea_asset)
+            valuation_price =num_dec*from_asset_price/convert(lea_asset)
             # 兑换交易对数量
             exchange_price = num_dec*from_asset_price/to_asset_price
             #折扣扣除
@@ -152,4 +151,4 @@ class Lae:
         print("预计扣除手续费{0}{1}".format(round(deel,8),to_symbol))
 
 if __name__ == '__main__':
-    Lae.exchange_price('SIPC','ETH_USDT',21362,0.5555,'BTC_USDT','USDT')
+    Lae.exchange_price('SIPC','ZT_USDT',0.0001,0.5555,'BTC_USDT','USDT')

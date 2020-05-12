@@ -34,4 +34,4 @@ class Test:
 
 if __name__ == '__main__':
     t = Test()
-    print(t.url)
+    print(type(t.header[0]))
