@@ -5,7 +5,7 @@
 
 
 #接口响应时间
-STRESS_LIST = [1,2,3]
+STRESS_LIST = []
 
 #接口执行结果
-RESULT_LIST = [1,2,3]
+RESULT_LIST = []

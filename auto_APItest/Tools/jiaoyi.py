@@ -5,6 +5,7 @@
 import random
 import requests
 import time
+from Datas import Constans
 
 num = round(random.uniform(40000,8),8)
 a = random.randint(1,10)
@@ -20,11 +21,12 @@ data = {
     'amount':a,
     'price':num
 }
-def xiadan(num = 100):
+def xiadan(num = 2):
     for i in range(num):
         time.sleep(2)
         response = requests.post(url=url,headers=headers,data=data)
         print(response.json())
+        print(Constans.STRESS_LIST)
 
 if __name__ == '__main__':
     #设置参数num = 循环次数默认100次

@@ -11,6 +11,7 @@
 from Utils import Requests
 import json
 import decimal
+from Datas import Constans
 
 request = Requests.Request()
 headers = {
@@ -20,6 +21,7 @@ r = request.get(url='http://47.97.206.151:8883/api/v1/exchangeTickers',headers=h
 r_json = json.loads(r['response_body'])
 tickers = r_json['result']['ticker']
 print(tickers)
+print(Constans.STRESS_LIST)
 
 #获取指定交易对最新价格
 def convert(symbol):
