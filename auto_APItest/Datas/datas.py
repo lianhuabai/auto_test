@@ -34,4 +34,5 @@ class Test:
 
 if __name__ == '__main__':
     t = Test()
-    print(type(t.header[0]))
+    print(t.header)
+    print(type(t.data[0]))

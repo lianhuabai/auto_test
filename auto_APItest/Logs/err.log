@@ -19,3 +19,16 @@
 [ERROR2020-05-11 17-56-36]请求异常：HTTPConnectionPool(host='47.97.206.151', port=8883): Max retries exceeded with url: /api/v1/exchangeTickers (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0306F4F0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))请求失败urlhttp://47.97.206.151:8883/api/v1/exchangeTickers
 [ERROR2020-05-11 17-57-12]请求异常：HTTPConnectionPool(host='47.97.206.151', port=8883): Max retries exceeded with url: /api/v1/exchangeTickers (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0307F530>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))请求失败urlhttp://47.97.206.151:8883/api/v1/exchangeTickers
 [ERROR2020-05-11 17-58-07]请求异常：HTTPConnectionPool(host='47.97.206.151', port=8883): Max retries exceeded with url: /api/v1/exchangeTickers (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x039EF4F0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))请求失败urlhttp://47.97.206.151:8883/api/v1/exchangeTickers
+[ERROR2020-05-13 10-01-31]html报告命令执行失败,错误信息:[WinError 2] 系统找不到指定的文件。
+[ERROR2020-05-13 10-13-28]html报告命令执行失败,错误信息:[WinError 2] 系统找不到指定的文件。
+[ERROR2020-05-13 10-14-03]html报告命令执行失败,错误信息:[WinError 2] 系统找不到指定的文件。
+[ERROR2020-05-13 10-48-56]断言字符串不在响应体中，断言字符串为:hhhh,响应信息为:"{\"message\":\"OK\",\"code\":0,\"result\":\"success\"}"
+[ERROR2020-05-13 10-52-33]断言字符串不在响应体中，断言字符串为:hhhh,响应信息为:"{\"message\":\"兑换失败\",\"code\":1,\"result\":null}"
+[ERROR2020-05-13 10-54-02]断言字符串不在响应体中，断言字符串为:hhhh,响应信息为:"{\"message\":\"兑换失败\",\"code\":1,\"result\":null}"
+[ERROR2020-05-13 11-29-11]断言字符串不在响应体中，断言字符串为:hhhh,响应信息为:"{\"message\":\"兑换失败\",\"code\":1,\"result\":null}"
+[ERROR2020-05-13 11-30-01]断言字符串不在响应体中，断言字符串为:hhhh,响应信息为:"{\"message\":\"兑换失败\",\"code\":1,\"result\":null}"
+[ERROR2020-05-13 11-43-16]断言字符串不在响应体中，断言字符串为:hhhh,响应信息为:"{\"message\":\"兑换失败\",\"code\":1,\"result\":null}"
+[ERROR2020-05-13 12-17-20]断言字符串不在响应体中，断言字符串为:hhhh,响应信息为:"{\"message\":\"兑换失败\",\"code\":1,\"result\":null}"
+[ERROR2020-05-13 16-44-22]sql执行出错，数据回滚。错误信息:(1046, 'No database selected')
+[ERROR2020-05-13 16-44-37]sql执行出错，数据回滚。错误信息:(1046, 'No database selected')
+[ERROR2020-05-13 16-46-07]sql执行出错，数据回滚。错误信息:'SQL' object has no attribute 'mysql'

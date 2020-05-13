@@ -25,7 +25,9 @@ class Token:
         if response.status_code == 200:
             token = res_json["result"]["token"]
             self.log.debug('登录成功token为:{0}'.format(token))
-            return token
+            self.config.set_config(self.config.TITLE,key='Authorizathion',value='Bearer '+token)
+            return 'Bearer '+token
+
         else:
             self.log.error('登录失败错误信息：'+ response)
 

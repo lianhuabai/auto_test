@@ -16,7 +16,7 @@ class Config:
 
     #登录配置
     TESTER = 'tester'
-    FRONT_HOST = 'front_host'
+    ACTIVITY_FRONT_HOST = 'activity_front_host'
     LOGIN_HOST = 'loginHost'
     LOGIN_INFO = 'loginInfo'
     LOGIN_HEADERS = 'headers'
@@ -58,7 +58,7 @@ class Config:
         self.config.read(self.config_path,encoding='utf-8')
 
         self.tester = self.get_config(Config.TITLE,Config.TESTER)
-        self.front_host = self.get_config(Config.TITLE,Config.FRONT_HOST)
+        self.activity_front_host = self.get_config(Config.TITLE,Config.ACTIVITY_FRONT_HOST)
         self.login_host = self.get_config(Config.TITLE,Config.LOGIN_HOST)
         self.login_info = self.get_config(Config.TITLE,Config.LOGIN_INFO)
         self.login_headers = self.get_config(Config.TITLE,Config.LOGIN_HEADERS)
@@ -95,7 +95,7 @@ class Config:
         :return:
         '''
         self.config.set(title,key,value)
-        with open(self.congfig_path,'wb') as f:
+        with open(self.config_path,'w') as f:
             return self.config.write(f)
 
     def add_config(self,title):
@@ -105,5 +105,9 @@ class Config:
         :return:
         '''
         self.config.add_section(title)
-        with open(self.config_path,'wb') as f:
+        with open(self.config_path,'w') as f:
             return self.config.write(f)
+
+if __name__ == '__main__':
+    c = Config()
+    c.set_config(title='test_config',key='Authorization',value='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODkzODY2NDF9.MaGRoLJqT2XGJSF9uM2RW8Suu2kqpMCHwaYdO2oPVtA')

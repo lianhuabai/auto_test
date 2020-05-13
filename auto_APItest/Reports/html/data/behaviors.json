@@ -1,0 +1,25 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "小额资产兑换",
+    "children" : [ {
+      "name" : "兑换资产",
+      "children" : [ {
+        "name" : "test_001",
+        "uid" : "6b7ac0fe6e34d6db",
+        "parentUid" : "27cfc53bbd3aab8a5e6eeaaf5b59f480",
+        "status" : "failed",
+        "time" : {
+          "start" : 1589343440333,
+          "stop" : 1589343440529,
+          "duration" : 196
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "27cfc53bbd3aab8a5e6eeaaf5b59f480"
+    } ],
+    "uid" : "0b74a44fbd866e83246c070b08ea4c9c"
+  } ]
+}

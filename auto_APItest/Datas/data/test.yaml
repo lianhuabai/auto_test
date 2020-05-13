@@ -1,30 +1,27 @@
 
 test:
-  desc: "测试数据"
+  desc: "小额资产兑换接口"
   parameter:
     -
-      url: /api/v1/user/trade/limit
+      url: /api-v2/activity/assetExchange/Exchange
       data:
         -
-          username: 18781082900
-          password: tester1
+          assets: ETH
+          source: Android
 
-        - username1: 18781082900
-          password1: tester1
+        - assets: SPNC
+          source: IOS
 
       headers: {
-                 "X-SITE-ID":"127",
-                 "Content-Type": "application/x-www-form-urlencoded"
+                 "X-SITE-ID":"127"
               }
     -
-      url: /transfer
+      url: /api-v2/activity/assetExchange/GetValuation
       data:
         -
-          username: 18781082901
-          password: tester1
+          asset: ETH
 
-        - username1: 18781082901
-          password1: tester1
+        - asset: SPNC
 
       headers: {
                  "X-SITE-ID":"127",

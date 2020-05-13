@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-8TLGUH8",
+    "children" : [ {
+      "name" : "18532-MainThread",
+      "children" : [ {
+        "name" : "test_001",
+        "uid" : "6b7ac0fe6e34d6db",
+        "parentUid" : "8307016f3d276bd7d3f4adb405a4c69e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1589343440333,
+          "stop" : 1589343440529,
+          "duration" : 196
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8307016f3d276bd7d3f4adb405a4c69e"
+    } ],
+    "uid" : "a105752f254d6f9ae7b7b8a8c3b53351"
+  } ]
+}

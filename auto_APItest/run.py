@@ -19,12 +19,12 @@ if __name__ == '__main__':
     xml_report_path = cofig.xml_report_path
     html_report_path = cofig.html_report_path
     #cmd命令，allure生成html测试报告
-    cmd = 'allure generaten {0} -o {1} --clean'.format(xml_report_path,html_report_path)
+    cmd = 'allure generate {0} -o {1} --clean'.format(xml_report_path,html_report_path)
     #执行用例，设置报告路劲
     pytest.main(['-s','-v','--alluredir',xml_report_path])
     try:
         #执行cmd命令
-        subprocess.Popen(args=cmd,encoding='utf-8')
+        subprocess.Popen(args=cmd,encoding='utf-8',shell=True).communicate()
 
     except Exception as e:
         log.error("html报告命令执行失败,错误信息:{}".format(e))

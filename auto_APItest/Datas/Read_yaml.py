@@ -39,10 +39,10 @@ class GetPages:
             parameters = value['parameter']
             list = []
             for parameter in parameters:
-                print(parameter)
+                # print(parameter)
                 list.append(parameter)
             data_list[page] = list
-        print(data_list)
+        # print(data_list)
         return data_list
 
 if __name__ == '__main__':

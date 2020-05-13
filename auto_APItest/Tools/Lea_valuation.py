@@ -153,4 +153,4 @@ class Lae:
         print("预计扣除手续费{0}{1}".format(round(deel,8),to_symbol))
 
 if __name__ == '__main__':
-    Lae.exchange_price('SIPC','ZT_USDT',0.0001,0.5555,'BTC_USDT','USDT')
+    Lae.exchange_price('ZT','ZT_USDT',0.3,0.5555,'BTC_USDT','USDT')
