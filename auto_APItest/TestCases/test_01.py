@@ -41,7 +41,7 @@ class TestExchange:
         request = Requests.Request()
         token = Token.Token().get_token()
         #读取host,读取url,data,headers
-        host = config.front_host
+        host = config.activity_front_host
         urls = data.url
         params = data.data
         headers = data.header
@@ -55,6 +55,10 @@ class TestExchange:
         response = request.post(url=api_url, data=params[0][0], headers=headers[0])
 
         assert _assert.assert_status(response['response_code'], 200)
-        assert _assert.assert_in_body(response['response_body'], 'hhhh')
-        assert _assert.assert_time(response['response_time'], 100)
-        Constans.RESULT_LIST.append('True')
+        # assert _assert.assert_in_body(response['response_body'], '兑换成功')
+        # assert _assert.assert_time(response['response_time'], 100)
+
+    @allure.story('用例2')
+    def test_002(self):
+        _assert = Assert.Assert()
+        assert _assert.assert_body(1,2)

@@ -98,10 +98,3 @@ class MyLog:
         add_handler('critical')
         logger.critical("[CRITICAL" + get_current_time() + "]" + log_msg)
         remove_handler('critical')
-
-# if __name__ == '__main__':
-#     MyLog.debug("This is debug message")
-#     MyLog.info("This is info message")
-#     MyLog.error("This is error msessage")
-#     MyLog.warning("This is warning message")
-#     MyLog.critical("This is critical message")

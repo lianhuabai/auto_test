@@ -7,5 +7,5 @@
 #接口响应时间
 STRESS_LIST = []
 
-#接口执行结果
-RESULT_LIST = []
+#用例执行结果
+RESULT_LIST = {}

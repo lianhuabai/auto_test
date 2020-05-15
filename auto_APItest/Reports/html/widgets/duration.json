@@ -1,11 +1,21 @@
 [ {
-  "uid" : "6b7ac0fe6e34d6db",
+  "uid" : "421c3eeb9727faa1",
+  "name" : "test_002",
+  "time" : {
+    "start" : 1589526807945,
+    "stop" : 1589526807945,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f7cf10437cb5eb5",
   "name" : "test_001",
   "time" : {
-    "start" : 1589343440333,
-    "stop" : 1589343440529,
-    "duration" : 196
+    "start" : 1589526807089,
+    "stop" : 1589526807942,
+    "duration" : 853
   },
-  "status" : "failed",
+  "status" : "passed",
   "severity" : "blocker"
 } ]

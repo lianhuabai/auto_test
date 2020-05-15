@@ -4,21 +4,33 @@
   "children" : [ {
     "name" : "DESKTOP-8TLGUH8",
     "children" : [ {
-      "name" : "18532-MainThread",
+      "name" : "9008-MainThread",
       "children" : [ {
-        "name" : "test_001",
-        "uid" : "6b7ac0fe6e34d6db",
-        "parentUid" : "8307016f3d276bd7d3f4adb405a4c69e",
-        "status" : "failed",
+        "name" : "test_002",
+        "uid" : "421c3eeb9727faa1",
+        "parentUid" : "e940fe7ec848a377fe2dead8572678e3",
+        "status" : "broken",
         "time" : {
-          "start" : 1589343440333,
-          "stop" : 1589343440529,
-          "duration" : 196
+          "start" : 1589526807945,
+          "stop" : 1589526807945,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_001",
+        "uid" : "f7cf10437cb5eb5",
+        "parentUid" : "e940fe7ec848a377fe2dead8572678e3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589526807089,
+          "stop" : 1589526807942,
+          "duration" : 853
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "8307016f3d276bd7d3f4adb405a4c69e"
+      "uid" : "e940fe7ec848a377fe2dead8572678e3"
     } ],
     "uid" : "a105752f254d6f9ae7b7b8a8c3b53351"
   } ]

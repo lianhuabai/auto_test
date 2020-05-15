@@ -142,3 +142,164 @@
 [ERROR2020-05-13 16-44-22]sql执行出错，数据回滚。错误信息:(1046, 'No database selected')
 [ERROR2020-05-13 16-44-37]sql执行出错，数据回滚。错误信息:(1046, 'No database selected')
 [ERROR2020-05-13 16-46-07]sql执行出错，数据回滚。错误信息:'SQL' object has no attribute 'mysql'
+[INFO2020-05-13 19-29-34]用例执行开始--------------------------
+[INFO2020-05-13 19-31-05]用例执行开始--------------------------
+[INFO2020-05-13 19-37-13]用例执行开始--------------------------
+[INFO2020-05-13 19-39-05]用例执行开始--------------------------
+[INFO2020-05-13 19-39-06]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-05-13 19-39-07]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjowLCJleHAiOjE1ODk0MTMxNDd9.35V2zqPH8r_KYOzLCOqxsJ8hZn_dH0m4B8RClQdBIkM
+[INFO2020-05-14 09-36-09]用例执行开始--------------------------
+[INFO2020-05-14 09-36-09]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-05-14 09-36-10]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODk0NjMzNzF9.GdBukfPi-7vVB7e7BplxuU3ubNBO3eA5H7voBZKuiTw
+[INFO2020-05-14 10-58-56]用例执行开始--------------------------
+[INFO2020-05-14 10-58-56]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-05-14 10-58-56]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODk0NjgzMzh9.bDj7WjT414oL_bB3QMW8uV6jcxGyjSeCiX6A4u9hiSk
+[ERROR2020-05-14 10-58-57]断言字符串不在响应体中，断言字符串为:hhhh,响应信息为:"{\"message\":\"超出兑换估值上限\",\"code\":1,\"result\":null}"
+[INFO2020-05-14 14-24-29]用例执行开始--------------------------
+[INFO2020-05-14 14-24-29]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-05-14 14-24-30]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODk0ODA2NzF9.Z6nwFppPyIQ6pw_-ksNjCyAu4aery_-hQ41rgYIeutw
+[ERROR2020-05-14 14-24-30]断言字符串不在响应体中，断言字符串为:兑换成功,响应信息为:"{\"message\":\"超出兑换估值上限\",\"code\":1,\"result\":null}"
+[INFO2020-05-14 14-35-55]用例执行开始--------------------------
+[DEBUG2020-05-14 14-35-55]删除旧报告数据:('', None)
+[INFO2020-05-14 14-35-55]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-05-14 14-35-55]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODk0ODEzNTZ9.iupU8fi2Pt4TwprAz1pAZ9MMAuYHuOxdXUZx1acb8tY
+[ERROR2020-05-14 14-35-55]断言字符串不在响应体中，断言字符串为:兑换成功,响应信息为:"{\"message\":\"超出兑换估值上限\",\"code\":1,\"result\":null}"
+[DEBUG2020-05-14 14-35-58]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-05-14 14-37-29]用例执行开始--------------------------
+[DEBUG2020-05-14 14-37-29]删除旧报告数据执行结果:('', None)
+[INFO2020-05-14 14-37-29]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-05-14 14-37-30]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODk0ODE0NTF9.3strIKghTFCml6Pvepb4RMMDXLi5NuRsU8qLkldAVww
+[ERROR2020-05-14 14-37-30]断言字符串不在响应体中，断言字符串为:兑换成功,响应信息为:"{\"message\":\"超出兑换估值上限\",\"code\":1,\"result\":null}"
+[DEBUG2020-05-14 14-37-32]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]用例执行开始--------------------------
+[DEBUG2020-05-14 14-42-26]删除旧报告数据执行结果:('', None)
+[INFO2020-05-14 14-42-26]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[INFO2020-05-14 14-42-26]读取配置文件-------------
+[DEBUG2020-05-14 14-42-26]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODk0ODE3NDd9.UUoYWxE-kt2aKSGfvpfAlSKblRMYaZuxwgi7KBmmaYY
+[ERROR2020-05-14 14-42-26]断言字符串不在响应体中，断言字符串为:兑换成功,响应信息为:"{\"message\":\"超出兑换估值上限\",\"code\":1,\"result\":null}"
+[DEBUG2020-05-14 14-42-29]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-05-15 11-19-02]用例执行开始--------------------------
+[DEBUG2020-05-15 11-19-02]删除旧报告数据执行结果:('', None)
+[INFO2020-05-15 11-19-02]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-05-15 11-19-02]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODk1NTU5NDR9.1K5uBm_MOEZlPDhOkxvSpRKspsofXwLP0hvo1IXY42k
+[ERROR2020-05-15 11-19-03]断言字符串不在响应体中，断言字符串为:兑换成功,响应信息为:"{\"message\":\"兑换失败\",\"code\":1,\"result\":null}"
+[DEBUG2020-05-15 11-19-06]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-05-15 11-20-39]用例执行开始--------------------------
+[DEBUG2020-05-15 11-20-39]删除旧报告数据执行结果:('', None)
+[INFO2020-05-15 11-20-39]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-05-15 11-20-39]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODk1NTYwNDF9.eUYGZUkFLcOu5RgFAUuMNYZvGyaJTkZWIV8LmVXT0P0
+[ERROR2020-05-15 11-20-40]断言字符串不在响应体中，断言字符串为:兑换成功,响应信息为:"{\"message\":\"兑换失败\",\"code\":1,\"result\":null}"
+[DEBUG2020-05-15 11-20-42]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-05-15 11-24-00]用例执行开始--------------------------
+[DEBUG2020-05-15 11-24-00]删除旧报告数据执行结果:('', None)
+[INFO2020-05-15 11-24-01]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-05-15 11-24-01]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODk1NTYyNDN9.CKu7tQ3F2pgu7oK5Mwp721ikOSM41kHANz7I5udhlD0
+[ERROR2020-05-15 11-24-01]断言字符串不在响应体中，断言字符串为:兑换成功,响应信息为:"{\"message\":\"兑换失败\",\"code\":1,\"result\":null}"
+[DEBUG2020-05-15 11-24-03]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-05-15 11-44-23]用例执行开始--------------------------
+[DEBUG2020-05-15 11-44-23]删除旧报告数据执行结果:('', None)
+[INFO2020-05-15 11-44-23]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-05-15 11-44-23]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODk1NTc0NjV9.y6T-einAiLRVxsMxkdndAy-oyW6cIMWXqNTzVLfT9IQ
+[ERROR2020-05-15 11-44-23]断言字符串不在响应体中，断言字符串为:兑换成功,响应信息为:"{\"message\":\"兑换失败\",\"code\":1,\"result\":null}"
+[DEBUG2020-05-15 11-44-26]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-05-15 11-45-58]用例执行开始--------------------------
+[DEBUG2020-05-15 11-45-58]删除旧报告数据执行结果:('', None)
+[INFO2020-05-15 11-45-58]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-05-15 11-45-58]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODk1NTc1NjB9.u6wfxbqDWe1TbmNzZRJDYhh1Jjjo6A6KzuQU8W0NEx8
+[ERROR2020-05-15 11-45-58]断言字符串不在响应体中，断言字符串为:兑换成功,响应信息为:"{\"message\":\"兑换失败\",\"code\":1,\"result\":null}"
+[DEBUG2020-05-15 11-46-01]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-05-15 14-25-38]用例执行开始--------------------------
+[DEBUG2020-05-15 14-25-38]删除旧报告数据执行结果:('', None)
+[INFO2020-05-15 14-25-39]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-05-15 14-25-39]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODk1NjcxNDF9.H9JiiZbD6I-WAnxKmZ6mmfr2XhJfUau4X1r9Zwa9CB4
+[ERROR2020-05-15 14-25-39]断言字符串不在响应体中，断言字符串为:兑换成功,响应信息为:"{\"message\":\"兑换失败\",\"code\":1,\"result\":null}"
+[DEBUG2020-05-15 14-25-44]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-05-15 14-26-41]用例执行开始--------------------------
+[INFO2020-05-15 14-27-28]用例执行开始--------------------------
+[INFO2020-05-15 14-28-33]用例执行开始--------------------------
+[INFO2020-05-15 14-29-39]用例执行开始--------------------------
+[INFO2020-05-15 14-31-46]用例执行开始--------------------------
+[INFO2020-05-15 14-37-11]用例执行开始--------------------------
+[DEBUG2020-05-15 14-37-11]删除旧报告数据执行结果:('', None)
+[INFO2020-05-15 14-37-11]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-05-15 14-37-11]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODk1Njc4MzN9.VJrmtHp1WHJ6_nWlB9UZaK1wTjDCjw4SEAscanlXSgM
+[ERROR2020-05-15 14-37-12]断言字符串不在响应体中，断言字符串为:兑换成功,响应信息为:"{\"message\":\"兑换失败\",\"code\":1,\"result\":null}"
+[ERROR2020-05-15 14-37-12]响应body对比失败，响应body为:1,断言body为:2
+[DEBUG2020-05-15 14-37-14]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-05-15 14-45-04]用例执行开始--------------------------
+[INFO2020-05-15 14-48-29]用例执行开始--------------------------
+[INFO2020-05-15 14-50-33]用例执行开始--------------------------
+[INFO2020-05-15 14-50-59]用例执行开始--------------------------
+[ERROR2020-05-15 14-51-00]邮件发送失败(535, b'Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256')
+[INFO2020-05-15 14-52-38]用例执行开始--------------------------
+[INFO2020-05-15 14-52-39]邮件发送成功
+[INFO2020-05-15 15-10-42]用例执行开始--------------------------
+[DEBUG2020-05-15 15-10-42]删除旧报告数据执行结果:('', None)
+[INFO2020-05-15 15-10-43]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-05-15 15-10-43]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODk1Njk4NDV9.AcqUFu62YmFJ4OGhYnaiDdCGLg9ZiS6YX7sjc34s6HM
+[ERROR2020-05-15 15-10-44]断言字符串不在响应体中，断言字符串为:兑换成功,响应信息为:"{\"message\":\"OK\",\"code\":0,\"result\":null}"
+[ERROR2020-05-15 15-10-44]响应body对比失败，响应body为:1,断言body为:2
+[DEBUG2020-05-15 15-10-46]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-05-15 15-10-47]邮件发送成功
+[INFO2020-05-15 15-13-26]用例执行开始--------------------------
+[DEBUG2020-05-15 15-13-26]删除旧报告数据执行结果:('', None)
+[INFO2020-05-15 15-13-26]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-05-15 15-13-27]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODk1NzAwMDh9.ceXv-abIDm3lQ6VW_MarGG99NHwlInq7Wdk5PD9rOtg
+[ERROR2020-05-15 15-13-27]响应body对比失败，响应body为:1,断言body为:2
+[DEBUG2020-05-15 15-13-30]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-05-15 15-13-31]邮件发送成功

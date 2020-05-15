@@ -3,7 +3,6 @@
 # @Author : tester_ye 
 # @File : Assert.py
 from Utils import Log
-from Datas import Constans
 import json
 
 class Assert:
@@ -23,7 +22,6 @@ class Assert:
             return True
         except:
             self.log.error("请求状态码对比失败,请求状态码为:{0},断言状态码为:{1}".format(code,assert_code))
-            Constans.RESULT_LIST.append('fail')
             raise
 
     def assert_body(self,body,assert_body):
@@ -38,7 +36,6 @@ class Assert:
             return True
         except:
             self.log.error("响应body对比失败，响应body为:{0},断言body为:{1}".format(body,assert_body))
-            Constans.RESULT_LIST.append('fail')
             raise
 
     def assert_in_body(self,body,assert_text):
@@ -55,7 +52,6 @@ class Assert:
             return True
         except:
             self.log.error("断言字符串不在响应体中，断言字符串为:{0},响应信息为:{1}".format(assert_text,text))
-            Constans.RESULT_LIST.append('fail')
             raise
 
     def assert_time(self,time,assert_time):
@@ -70,5 +66,4 @@ class Assert:
             return True
         except:
             self.log.error("响应时间超时，断言时间:{0},响应时间:{1}".format(assert_time,time))
-            Constans.RESULT_LIST.append('fail')
             raise

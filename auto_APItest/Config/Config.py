@@ -49,7 +49,7 @@ class Config:
         self.log = Log.MyLog()
         #获取配置文件config.ini绝对路劲
         self.config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),'config.ini')
-        self.xml_report_path = Config.path_dir + '/Reports/xml'
+        self.xml_report_path = Config.path_dir + '\\Reports\\xml'
         self.html_report_path = Config.path_dir + '/Reports/html'
 
         if not os.path.exists(self.config_path):

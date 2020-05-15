@@ -1,21 +1,40 @@
 {
   "4a9d004a8e65c30a9373e54d10e83892" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f7cf10437cb5eb5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589526807089,
+        "stop" : 1589526807942,
+        "duration" : 853
+      }
+    } ]
+  },
+  "4852f8a856c7054b2bc974c95a71170a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6b7ac0fe6e34d6db",
-      "status" : "failed",
-      "statusDetails" : "AssertionError",
+      "uid" : "421c3eeb9727faa1",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'append'",
       "time" : {
-        "start" : 1589343440333,
-        "stop" : 1589343440529,
-        "duration" : 196
+        "start" : 1589526807945,
+        "stop" : 1589526807945,
+        "duration" : 0
       }
     } ]
   }

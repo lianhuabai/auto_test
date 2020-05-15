@@ -50,9 +50,10 @@ class SQL:
         except Exception as e:
             self.log.error("数据库查询错误，错误信息:{0}".format(e))
             raise
-        # 关闭数据库连接
-        self.cursor.close()
-        self.db.close()
+        finally:
+            # 关闭数据库连接
+            self.cursor.close()
+            self.db.close()
 
     def update_sql(self,sql):
         '''
@@ -66,10 +67,10 @@ class SQL:
         except Exception as e:
             self.log.error("sql执行出错，数据回滚。错误信息:{}".format(e))
             self.db.rollback()
-
-        # 关闭数据库连接
-        self.cursor.close()
-        self.db.close()
+        finally:
+            # 关闭数据库连接
+            self.cursor.close()
+            self.db.close()
 
 if __name__ == '__main__':
     sql = 'select `activity_name` from activity.activities where `type` = 7'

@@ -7,18 +7,34 @@
       "name" : "兑换资产",
       "children" : [ {
         "name" : "test_001",
-        "uid" : "6b7ac0fe6e34d6db",
+        "uid" : "f7cf10437cb5eb5",
         "parentUid" : "27cfc53bbd3aab8a5e6eeaaf5b59f480",
-        "status" : "failed",
+        "status" : "passed",
         "time" : {
-          "start" : 1589343440333,
-          "stop" : 1589343440529,
-          "duration" : 196
+          "start" : 1589526807089,
+          "stop" : 1589526807942,
+          "duration" : 853
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
       "uid" : "27cfc53bbd3aab8a5e6eeaaf5b59f480"
+    }, {
+      "name" : "用例2",
+      "children" : [ {
+        "name" : "test_002",
+        "uid" : "421c3eeb9727faa1",
+        "parentUid" : "6de58396a2cc7017c10d8971411aaff1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1589526807945,
+          "stop" : 1589526807945,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6de58396a2cc7017c10d8971411aaff1"
     } ],
     "uid" : "0b74a44fbd866e83246c070b08ea4c9c"
   } ]
