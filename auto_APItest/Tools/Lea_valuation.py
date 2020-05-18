@@ -15,9 +15,9 @@ from Datas import Constans
 
 request = Requests.Request()
 headers = {
-    "X-SITE-ID":"127"
+    "X-SITE-ID":"1"
 }
-r = request.get(url='http://47.97.206.151:8883/api/v1/exchangeTickers',headers=headers,data=None)
+r = request.get(url='https://www.zt998.com/api/v1/exchangeTickers',headers=headers,data=None)
 r_json = json.loads(r['response_body'])
 tickers = r_json['result']['ticker']
 print(tickers)
@@ -45,9 +45,9 @@ def exchange(fromasset):
     symbol = {}
     for i in tickers:
         tickter = (i['symbol'])
-        tickter_asset = tickter[0:len_fromasset]
+        tickter_asset = tickter[0:len_fromasset+1]
 
-        if fromasset == tickter_asset:
+        if fromasset+'_' == tickter_asset:
             symbol[i['symbol']] = i['last']
     return(symbol)
 
@@ -153,4 +153,4 @@ class Lae:
         print("预计扣除手续费{0}{1}".format(round(deel,8),to_symbol))
 
 if __name__ == '__main__':
-    Lae.exchange_price('ETH','ZT_USDT',0.3333,0.5555,'BTC_USDT','USDT')
+    Lae.exchange_price('SIPC','ZTB_USDT',0.96,0.02,'BTC_USDT','USDT')

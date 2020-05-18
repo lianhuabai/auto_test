@@ -2,56 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcdb5be0-90aa-4002-86d1-36575498a81c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tools/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tools/st.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config/Config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datas/Constans.py" beforeDir="false" afterPath="$PROJECT_DIR$/Datas/Constans.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/err.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/err.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/data/attachments/7ec2eb89a08ebd0f.attach" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/data/attachments/850d601c8c900e8e.attach" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/data/attachments/a2bcc0859b15d201.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/data/behaviors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/data/behaviors.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/data/behaviors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/data/categories.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/data/categories.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/data/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/data/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/data/packages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/data/suites.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/data/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/data/suites.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/data/test-cases/6b7ac0fe6e34d6db.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/data/timeline.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/data/timeline.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/export/influxDbData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/export/prometheusData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/export/prometheusData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/history/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/history/categories-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/history/duration-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/history/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/history/history-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/history/history.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/history/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/history/retry-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/widgets/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/widgets/behaviors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/widgets/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/widgets/categories-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/widgets/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/widgets/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/widgets/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/widgets/duration-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/widgets/duration.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/widgets/duration.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/widgets/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/widgets/history-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/widgets/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/widgets/retry-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/widgets/severity.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/widgets/severity.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/widgets/status-chart.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/widgets/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/widgets/suites.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/html/widgets/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/html/widgets/summary.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/xml/1b23deae-c14a-4ed0-accd-4e0d5896f3b0-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/xml/4b323196-805c-4ccb-99d1-c1f35b39702e-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/xml/78795d45-7a61-4af9-a5d6-1a645b908468-attachment.attach" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/xml/b4053c8a-0669-4a5f-8a59-d8b3633707f0-attachment.attach" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/test_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/test_01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tools/Lea_valuation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/Lea_valuation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tools/Shell.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tools/Thread_te.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/Thread_te.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/Assert.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Assert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/Log.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/Read_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Read_sql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="69" column="42" lean-forward="true" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+            <state relative-caret-position="1025">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
               <folding>
                 <element signature="e#99#112#0" expanded="true" />
               </folding>
@@ -94,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Utils/Email.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
+            <state relative-caret-position="244">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
               <folding>
                 <element signature="e#133#144#0" expanded="true" />
               </folding>
@@ -107,12 +58,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tools/server.py">
+        <entry file="file://$PROJECT_DIR$/Tools/Lea_valuation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="55" />
+            <state relative-caret-position="319">
+              <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
               <folding>
-                <element signature="e#102#111#0" expanded="true" />
+                <element signature="e#145#171#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -219,7 +170,6 @@
         <option value="$PROJECT_DIR$/Datas/data/test.yaml" />
         <option value="$PROJECT_DIR$/Tools/jiaoyi.py" />
         <option value="$PROJECT_DIR$/Utils/Token.py" />
-        <option value="$PROJECT_DIR$/Tools/Lea_valuation.py" />
         <option value="$PROJECT_DIR$/Utils/Log.py" />
         <option value="$PROJECT_DIR$/Utils/Read_sql.py" />
         <option value="$PROJECT_DIR$/Tools/st.py" />
@@ -232,6 +182,7 @@
         <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/TestCases/test_01.py" />
         <option value="$PROJECT_DIR$/Utils/Assert.py" />
+        <option value="$PROJECT_DIR$/Tools/Lea_valuation.py" />
       </list>
     </option>
   </component>
@@ -242,8 +193,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="401" />
+    <option name="y" value="33" />
     <option name="width" value="1278" />
     <option name="height" value="980" />
   </component>
@@ -283,17 +234,6 @@
               <item name="auto_APItest" type="b2602c69:ProjectViewProjectNode" />
               <item name="auto_APItest" type="462c0819:PsiDirectoryNode" />
               <item name="Logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_APItest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_APItest" type="462c0819:PsiDirectoryNode" />
-              <item name="Reports" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_APItest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_APItest" type="462c0819:PsiDirectoryNode" />
-              <item name="Reports" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="auto_APItest" type="b2602c69:ProjectViewProjectNode" />
@@ -346,7 +286,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RunManager" selected="Python.Lea_valuation">
     <configuration name="Lea_valuation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="auto_APItest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -459,10 +399,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Lea_valuation" />
         <item itemvalue="Python.run" />
         <item itemvalue="Python.server" />
         <item itemvalue="Python.st" />
-        <item itemvalue="Python.Lea_valuation" />
         <item itemvalue="Python.Read_sql" />
       </list>
     </recent_temporary>
@@ -516,12 +456,12 @@
       <workItem from="1589334007558" duration="25355000" />
       <workItem from="1589368732448" duration="1821000" />
       <workItem from="1589420123103" duration="14028000" />
-      <workItem from="1589506793566" duration="13692000" />
+      <workItem from="1589506793566" duration="18876000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="322769000" />
+    <option name="totallyTimeSpent" value="327953000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,10 +477,10 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.30063966" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.30063966" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27440348" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27440348" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.42407808" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -549,7 +489,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.3308026" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" weight="0.28741866" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" weight="0.14425163" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -603,8 +543,8 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/auto_APItest$Email.coverage" NAME="Email Coverage Results" MODIFIED="1587006744250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
     <SUITE FILE_PATH="coverage/auto_APItest$st.coverage" NAME="st Coverage Results" MODIFIED="1589427722831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
-    <SUITE FILE_PATH="coverage/auto_APItest$Lea_valuation.coverage" NAME="Lea_valuation Coverage Results" MODIFIED="1589361927688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
     <SUITE FILE_PATH="coverage/auto_APItest$server.coverage" NAME="server Coverage Results" MODIFIED="1589522456797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
+    <SUITE FILE_PATH="coverage/auto_APItest$Lea_valuation.coverage" NAME="Lea_valuation Coverage Results" MODIFIED="1589533710081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
     <SUITE FILE_PATH="coverage/auto_APItest$ces.coverage" NAME="ces Coverage Results" MODIFIED="1588906510562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/auto_APItest$run.coverage" NAME="run Coverage Results" MODIFIED="1589526806323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/auto_APItest$Requests.coverage" NAME="Requests Coverage Results" MODIFIED="1589015879548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
@@ -792,16 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tools/Lea_valuation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2500">
-          <caret line="103" column="60" selection-start-line="103" selection-start-column="60" selection-end-line="103" selection-end-column="60" />
-          <folding>
-            <element signature="e#145#171#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Reports/xml/e1d1a0e5-5e25-43c8-bc9a-596d5faea83f-attachment.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -887,16 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/Email.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
-          <folding>
-            <element signature="e#133#144#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Config/config.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -950,10 +870,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="69" column="42" lean-forward="true" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+        <state relative-caret-position="1025">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
           <folding>
             <element signature="e#99#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/Lea_valuation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+          <folding>
+            <element signature="e#145#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/Email.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#133#144#0" expanded="true" />
           </folding>
         </state>
       </provider>
