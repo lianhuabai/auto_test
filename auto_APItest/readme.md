@@ -142,4 +142,12 @@ handler = logging.FileHandler(log_file,encoding='utf-8')
         print(data_list)
         return data_list
 ```
+*run.py 测试执行入口*
+``` 
+    #执行用例，设置报告路劲
+    pytest.main(['-s','-v','--alluredir',xml_report_path])
+    #生成html测试报告并指定路劲
+    allure generate xml_path -o html_path
+    
+```
 

@@ -19,7 +19,7 @@ def parse():
     # files同样是list, 内容是该文件夹中所有的文件(不包括子目录)
     for root, dirs, files in os.walk(path):
         for name in files:
-            print(name)
+            # print(name)
             watch_file_path = os.path.join(root, name)
             with open(watch_file_path, encoding='UTF-8') as f:
                 #safe_load(),yaml文件转换为python值
@@ -45,5 +45,5 @@ class GetPages:
         # print(data_list)
         return data_list
 
-if __name__ == '__main__':
-    lists = GetPages.get_data_list()
+# if __name__ == '__main__':
+#     lists = GetPages.get_data_list()

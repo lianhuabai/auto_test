@@ -36,10 +36,8 @@ if __name__ == '__main__':
     except Exception as e:
         log.error("删除数据失败:{}".format(e))
 
-    #执行用例，设置报告路劲
     pytest.main(['-s','-v','--alluredir',xml_report_path])
     try:
-        #执行cmd命令
         out = subprocess.Popen(args=cmd,encoding='utf-8',shell=True,stdout=subprocess.PIPE).communicate()
         log.debug("生成html报告命令执行结果{}".format(out))
 
@@ -57,20 +55,15 @@ if __name__ == '__main__':
             reslut = json.load(f)
             Constans.RESULT_LIST[reslut['name']] = reslut['status']
 
-    try:
-        #发送邮件
-        email.send_mail()
-    except Exception as e:
-        log.error("邮件发送失败，错误信息:{}".format(e))
-        raise
+    # try:
+    #     #发送邮件
+    #     email.send_mail()
+    # except Exception as e:
+    #     log.error("邮件发送失败，错误信息:{}".format(e))
+    #     raise
 
     # try:
     #     subprocess.Popen(args=server,shell=True,encoding='utf-8').communicate()
     # except Exception as e:
     #     log.error("启动服务失败:{}".format(e))
-
-
-
-
-
 
