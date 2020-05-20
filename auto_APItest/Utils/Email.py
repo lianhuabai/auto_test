@@ -44,10 +44,11 @@ class SendMail:
         #邮件正文内容,MIMEText参数，文本内容、文本格式、编码方式
         body = '自动化测试报告:\n 接口也响应时间:{0} \n 测试结果: {1}\n'.format(stress,result)
         message.attach(MIMEText(body, 'plain', 'utf-8'))
+        port = 25
 
         try:
             smtp = smtplib.SMTP()
-            smtp.connect(smtpserver)
+            smtp.connect(smtpserver,port=port)
             smtp.login(username,password)
             smtp.sendmail(sender,receiver,message.as_string())
         except smtplib.SMTPException as e:
