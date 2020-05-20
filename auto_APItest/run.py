@@ -55,12 +55,12 @@ if __name__ == '__main__':
             reslut = json.load(f)
             Constans.RESULT_LIST[reslut['name']] = reslut['status']
 
-    # try:
-    #     #发送邮件
-    #     email.send_mail()
-    # except Exception as e:
-    #     log.error("邮件发送失败，错误信息:{}".format(e))
-    #     raise
+    try:
+        #发送邮件
+        email.send_mail()
+    except Exception as e:
+        log.error("邮件发送失败，错误信息:{}".format(e))
+        raise
 
     # try:
     #     subprocess.Popen(args=server,shell=True,encoding='utf-8').communicate()

@@ -54,7 +54,7 @@ class Request:
             response = requests.post(url=url,headers=headers,data=data)
 
         except requests.RequestException as e:
-            self.log.info("请求失败:"+ str(e)+"请求失败url:"+ url)
+            self.log.error("请求失败:"+ str(e)+"请求失败url:"+ url)
 
         response_time = response.elapsed.total_seconds()
         response_code = response.status_code
