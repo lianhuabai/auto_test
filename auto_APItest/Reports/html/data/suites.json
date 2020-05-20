@@ -9,25 +9,25 @@
         "name" : "TestExchange",
         "children" : [ {
           "name" : "test_001",
-          "uid" : "f7cf10437cb5eb5",
+          "uid" : "6500401776ff5ff3",
           "parentUid" : "c5a04821bdf639ff3d6a44497938f5dd",
           "status" : "passed",
           "time" : {
-            "start" : 1589526807089,
-            "stop" : 1589526807942,
-            "duration" : 853
+            "start" : 1589946259709,
+            "stop" : 1589946260011,
+            "duration" : 302
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
           "name" : "test_002",
-          "uid" : "421c3eeb9727faa1",
+          "uid" : "e5c26358f60ed013",
           "parentUid" : "c5a04821bdf639ff3d6a44497938f5dd",
-          "status" : "broken",
+          "status" : "failed",
           "time" : {
-            "start" : 1589526807945,
-            "stop" : 1589526807945,
-            "duration" : 0
+            "start" : 1589946260014,
+            "stop" : 1589946260017,
+            "duration" : 3
           },
           "flaky" : false,
           "parameters" : [ ]

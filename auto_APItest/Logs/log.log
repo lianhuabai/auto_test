@@ -303,3 +303,10 @@
 [ERROR2020-05-15 15-13-27]响应body对比失败，响应body为:1,断言body为:2
 [DEBUG2020-05-15 15-13-30]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
 [INFO2020-05-15 15-13-31]邮件发送成功
+[INFO2020-05-20 11-44-19]用例执行开始--------------------------
+[DEBUG2020-05-20 11-44-19]删除旧报告数据执行结果:('', None)
+[INFO2020-05-20 11-44-19]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-05-20 11-44-19]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODk5ODk0NjB9.Sgk9qryAmqvGaKx46OWk1PY2wdRktsZLQBNsDLuvFzs
+[ERROR2020-05-20 11-44-20]响应body对比失败，响应body为:1,断言body为:2
+[DEBUG2020-05-20 11-44-24]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-05-20 11-44-25]邮件发送成功

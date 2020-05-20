@@ -1,1 +1,0 @@
-ERROR    root:Log.py:87 [ERROR2020-05-15 15-13-27]响应body对比失败，响应body为:1,断言body为:2

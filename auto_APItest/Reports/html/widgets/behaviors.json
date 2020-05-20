@@ -4,8 +4,8 @@
     "uid" : "0b74a44fbd866e83246c070b08ea4c9c",
     "name" : "小额资产兑换",
     "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
+      "failed" : 1,
+      "broken" : 0,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,

@@ -1,12 +1,12 @@
 {
-  "uid" : "f7cf10437cb5eb5",
+  "uid" : "6500401776ff5ff3",
   "name" : "test_001",
   "fullName" : "TestCases.test_01.TestExchange#test_001",
   "historyId" : "4a9d004a8e65c30a9373e54d10e83892",
   "time" : {
-    "start" : 1589526807089,
-    "stop" : 1589526807942,
-    "duration" : 853
+    "start" : 1589946259709,
+    "stop" : 1589946260011,
+    "duration" : 302
   },
   "description" : "小额资产兑换测试",
   "descriptionHtml" : "<p>小额资产兑换测试</p>\n",
@@ -19,51 +19,51 @@
     "steps" : [ {
       "name" : "测试步骤调用",
       "time" : {
-        "start" : 1589526807185,
-        "stop" : 1589526807185,
+        "start" : 1589946259772,
+        "stop" : 1589946259772,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "7dafda38cc83d57e",
+        "uid" : "d53cd22e5c8cb756",
         "name" : "期望结果",
-        "source" : "7dafda38cc83d57e.attach",
+        "source" : "d53cd22e5c8cb756.attach",
         "type" : "text/plain",
         "size" : 6
       } ],
       "parameters" : [ ],
-      "attachmentsCount" : 1,
-      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
       "hasContent" : true,
-      "stepsCount" : 0
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ {
-      "uid" : "bf03cd128817ffba",
-      "name" : "a7add859-9ba6-4f4e-855f-f6df2018efbd-attachment.attach",
-      "source" : "bf03cd128817ffba.attach",
+      "uid" : "364453950dc3c304",
+      "name" : "c1d4becf-fab5-4e41-ade9-bcc37e0d7ee5-attachment.attach",
+      "source" : "364453950dc3c304.attach",
       "type" : "text/plain",
       "size" : 131
     }, {
-      "uid" : "58e213ccea9f7f2b",
+      "uid" : "57ab7586d34bd7a0",
       "name" : "log",
-      "source" : "58e213ccea9f7f2b.txt",
+      "source" : "57ab7586d34bd7a0.txt",
       "type" : "text/plain",
       "size" : 695
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 3,
-    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
     "hasContent" : true,
-    "stepsCount" : 1
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "severity",
-    "value" : "blocker"
-  }, {
     "name" : "story",
     "value" : "兑换资产"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
   }, {
     "name" : "feature",
     "value" : "小额资产兑换"
@@ -81,7 +81,7 @@
     "value" : "DESKTOP-8TLGUH8"
   }, {
     "name" : "thread",
-    "value" : "9008-MainThread"
+    "value" : "932-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -117,6 +117,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "f7cf10437cb5eb5.json",
+  "source" : "6500401776ff5ff3.json",
   "parameterValues" : [ ]
 }

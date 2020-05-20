@@ -1,0 +1,5 @@
+DEBUG    urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): 47.97.206.151:8883
+DEBUG    urllib3.connectionpool:connectionpool.py:396 http://47.97.206.151:8883 "POST /api/v1/login HTTP/1.1" 200 439
+DEBUG    root:Log.py:75 [DEBUG2020-05-20 11-44-19]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODk5ODk0NjB9.Sgk9qryAmqvGaKx46OWk1PY2wdRktsZLQBNsDLuvFzs
+DEBUG    urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): 47.97.206.151:3030
+DEBUG    urllib3.connectionpool:connectionpool.py:396 http://47.97.206.151:3030 "POST /api-v2/activity/assetExchange/Exchange HTTP/1.1" 200 49

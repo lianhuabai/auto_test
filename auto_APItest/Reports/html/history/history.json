@@ -9,32 +9,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f7cf10437cb5eb5",
+      "uid" : "6500401776ff5ff3",
       "status" : "passed",
       "time" : {
-        "start" : 1589526807089,
-        "stop" : 1589526807942,
-        "duration" : 853
+        "start" : 1589946259709,
+        "stop" : 1589946260011,
+        "duration" : 302
       }
     } ]
   },
   "4852f8a856c7054b2bc974c95a71170a" : {
     "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
+      "failed" : 1,
+      "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "421c3eeb9727faa1",
-      "status" : "broken",
-      "statusDetails" : "AttributeError: 'dict' object has no attribute 'append'",
+      "uid" : "e5c26358f60ed013",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
       "time" : {
-        "start" : 1589526807945,
-        "stop" : 1589526807945,
-        "duration" : 0
+        "start" : 1589946260014,
+        "stop" : 1589946260017,
+        "duration" : 3
       }
     } ]
   }

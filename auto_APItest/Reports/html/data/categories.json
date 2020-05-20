@@ -2,24 +2,24 @@
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
   "children" : [ {
-    "name" : "Test defects",
+    "name" : "Product defects",
     "children" : [ {
-      "name" : "AttributeError: 'dict' object has no attribute 'append'",
+      "name" : "AssertionError",
       "children" : [ {
         "name" : "test_002",
-        "uid" : "421c3eeb9727faa1",
-        "parentUid" : "c59f92179be0aeba001b5d669dca2935",
-        "status" : "broken",
+        "uid" : "e5c26358f60ed013",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
         "time" : {
-          "start" : 1589526807945,
-          "stop" : 1589526807945,
-          "duration" : 0
+          "start" : 1589946260014,
+          "stop" : 1589946260017,
+          "duration" : 3
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "c59f92179be0aeba001b5d669dca2935"
+      "uid" : "a0017ad855102fea08b8682d27fec4ca"
     } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]
 }
