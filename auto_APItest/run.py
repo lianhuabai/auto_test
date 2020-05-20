@@ -22,7 +22,9 @@ if __name__ == '__main__':
     xml_report_path = cofig.xml_report_path
     html_report_path = cofig.html_report_path
     print(xml_report_path)
-    del_xml = 'del /q {0}'.format(xml_report_path)
+    # del_xml = 'del /q {0}'.format(xml_report_path)
+    #linux
+    del_xml = 'rm -rf {0}'.format(xml_report_path)
     # cmd命令，allure生成html测试报告
     cmd = 'allure generate {0} -o {1} --clean'.format(xml_report_path, html_report_path)
     #开启allure服务命令
