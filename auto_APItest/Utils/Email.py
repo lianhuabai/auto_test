@@ -59,6 +59,6 @@ class SendMail:
         finally:
             smtp.quit()
 
-if __name__ == '__main__':
-    sdm = SendMail()
-    sdm.send_mail()
+# if __name__ == '__main__':
+#     sdm = SendMail()
+#     sdm.send_mail()

@@ -13,15 +13,21 @@ class SQL:
         config = Config.Config()
         self.log = Log.MyLog()
 
-        host = config.sql_host
-        port = int(config.sql_port)
-        user = config.sql_user
-        password = config.sql_password
-
+        self.host = config.sql_host
+        self.port = int(config.sql_port)
+        self.user = config.sql_user
+        self.password = config.sql_password
+    def connect(self):
         # 创建mysql连接
-        self.db = pymysql.connect(host=host, port=port, user=user, password=password)
+        self.db = pymysql.connect(host=self.host, port=self.port, user=self.user, password=self.password)
         # cursor获取数据库操作游标
         self.cursor = self.db.cursor()
+        print("创建连接")
+
+    def close(self):
+        self.cursor.close()
+        self.db.close()
+        print("连接已释放")
 
     def read_mysql(self,sql,type = 0,num = 10):
         '''
@@ -33,8 +39,10 @@ class SQL:
 
         try:
 
+            self.connect()
             #执行sql语句
             self.cursor.execute(sql)
+            print('查询开始')
             '''
             默认返回查询一条数据，type为1时需要传入返回数据条数，type为2时返回所有查询结果
             '''
@@ -45,15 +53,15 @@ class SQL:
             elif type == 2:
                 reslut = self.cursor.fetchall()
 
+            # 关闭数据库连接
+            self.close()
+
             return reslut
 
         except Exception as e:
             self.log.error("数据库查询错误，错误信息:{0}".format(e))
             raise
-        finally:
-            # 关闭数据库连接
-            self.cursor.close()
-            self.db.close()
+
 
     def update_sql(self,sql):
         '''
@@ -62,19 +70,20 @@ class SQL:
         :return:
         '''
         try:
+            self.connect()
             self.cursor.execute(sql)
             self.db.commit()
+
+            # 关闭数据库连接
+            self.close()
         except Exception as e:
             self.log.error("sql执行出错，数据回滚。错误信息:{}".format(e))
             self.db.rollback()
-        finally:
-            # 关闭数据库连接
-            self.cursor.close()
-            self.db.close()
+
 
 if __name__ == '__main__':
-    sql = 'select `activity_name` from activity.activities where `type` = 7'
-    sql1 = 'delete from activity.lae_asset_exchange_log where `uid` = 1003346'
+    sql = 'select draw_count from activity.rp_give_red_packet where order_no = "159011681353130"'
+    # sql1 = 'delete from activity.lae_asset_exchange_log where `uid` = 1003346'
     sq = SQL()
-    # print(sq.read_mysql(sql = sql,type=2))
-    sq.update_sql(sql=sql1)
+    print(sq.read_mysql(sql = sql))
+    # sq.update_sql(sql=sql1)
