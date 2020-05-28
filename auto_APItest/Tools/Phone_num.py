@@ -22,4 +22,7 @@ class Phoen_num:
 
 if __name__ == '__main__':
     ph = Phoen_num()
-    print(ph.create_phone())
+    with open('./data_4.txt', 'w', encoding='utf-8')as f:
+        for i in range(0,2000):
+            phone = str(ph.create_phone())
+            f.write( phone+ '\n')
