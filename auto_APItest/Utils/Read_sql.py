@@ -81,9 +81,14 @@ class SQL:
             self.db.rollback()
 
 
-if __name__ == '__main__':
-    sql = 'select draw_count from activity.rp_give_red_packet where order_no = "159011681353130"'
-    # sql1 = 'delete from activity.lae_asset_exchange_log where `uid` = 1003346'
-    sq = SQL()
-    print(sq.read_mysql(sql = sql))
-    # sq.update_sql(sql=sql1)
+# if __name__ == '__main__':
+#     sql = 'select username from exchange.users order by created_at'
+#     # sql1 = 'delete from activity.lae_asset_exchange_log where `uid` = 1003346'
+#     sq = SQL()
+#     user = sq.read_mysql(sql=sql,type=1,num=1100)
+#     with open('./data_1.txt','w',encoding='utf-8')as f:
+#         for i in user:
+#             if i[0] is not None:
+#                 f.write(i[0]+'\n')
+    # sq.read_mysql(sql=sql)
+    # print(sq.read_mysql(sql=sql,type=2))

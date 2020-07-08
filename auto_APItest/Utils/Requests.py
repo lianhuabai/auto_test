@@ -33,7 +33,7 @@ class Request:
         #获取响应时间
         response_time = response.elapsed.total_seconds()
         response_code = response.status_code
-        response_body = response.text
+        response_body = response.text 
         response_data = dict()
         response_data['response_code'] = response_code
         response_data['response_time'] = response_time

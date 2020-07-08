@@ -20,6 +20,7 @@ class Config:
     LOGIN_HOST = 'loginHost'
     LOGIN_INFO = 'loginInfo'
     LOGIN_HEADERS = 'headers'
+    TOKEN = 'authorizathion'
 
     #邮件配置
     SMTP_SERVER = 'smtpserver'
@@ -62,6 +63,7 @@ class Config:
         self.login_host = self.get_config(Config.TITLE,Config.LOGIN_HOST)
         self.login_info = self.get_config(Config.TITLE,Config.LOGIN_INFO)
         self.login_headers = self.get_config(Config.TITLE,Config.LOGIN_HEADERS)
+        self.token = self.get_config(Config.TITLE,Config.TOKEN)
         #邮件配置信息读取
         self.smtpserver = self.get_config(Config.TITLE_EMAIL,Config.SMTP_SERVER)
         self.sender = self.get_config(Config.TITLE_EMAIL,Config.SENDER)
@@ -74,7 +76,7 @@ class Config:
         self.sql_user = self.get_config(Config.TITILE_DB,Config.DB_USER)
         self.sql_password = self.get_config(Config.TITILE_DB,Config.DB_PASSWORD)
 
-
+ 
     def get_config(self,title,key):
         '''
         配置文件读取

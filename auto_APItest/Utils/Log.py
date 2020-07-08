@@ -22,7 +22,6 @@ LEVELS = {
 }
 #初始化日志对象logger
 logger = logging.getLogger()
-level = 'default'
 
 # 实例化日志信息输出到磁盘文件上的流，指定文件路劲和编码
 handler = logging.FileHandler(log_file, encoding='utf-8')

@@ -323,3 +323,31 @@
 [ERROR2020-05-21 18-00-14]数据库查询错误，错误信息:(0, '')
 [ERROR2020-05-21 18-00-49]数据库查询错误，错误信息:(0, '')
 [ERROR2020-05-21 18-01-49]数据库查询错误，错误信息:(0, '')
+[ERROR2020-05-22 16-02-34]数据库查询错误，错误信息:Packet sequence number wrong - got 1 expected 0
+[INFO2020-05-25 11-23-08]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[INFO2020-05-25 11-23-33]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[ERROR2020-05-25 18-06-20]数据库查询错误，错误信息:(2003, "Can't connect to MySQL server on '47.97.206.151' (timed out)")
+[ERROR2020-05-25 18-08-38]数据库查询错误，错误信息:(2003, "Can't connect to MySQL server on '47.97.206.151' (timed out)")
+[ERROR2020-05-25 18-11-05]sql执行出错，数据回滚。错误信息:(2003, "Can't connect to MySQL server on '47.97.206.151' (timed out)")
+[ERROR2020-05-25 18-16-12]数据库查询错误，错误信息:(2003, "Can't connect to MySQL server on '47.97.206.151' (timed out)")
+[ERROR2020-06-03 20-00-27]数据库查询错误，错误信息:(1046, 'No database selected')
+[ERROR2020-06-03 20-13-04]数据库查询错误，错误信息:(1046, 'No database selected')
+[ERROR2020-06-03 21-27-04]数据库查询错误，错误信息:unhashable type: 'slice'
+[ERROR2020-06-03 21-32-44]数据库查询错误，错误信息:unhashable type: 'slice'
+[ERROR2020-06-03 21-34-55]数据库查询错误，错误信息:unhashable type: 'slice'
+[ERROR2020-06-03 21-35-43]数据库查询错误，错误信息:unhashable type: 'slice'
+[DEBUG2020-06-12 14-12-35]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1OTE5ODU1NTR9.FcWX7-2oehdngOZkLX2vdvhB9FhRW0p_kDVEhOsGpAg
+[INFO2020-06-22 18-27-44]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[ERROR2020-06-22 18-27-46]响应body对比失败，响应body为:1,断言body为:2
+[INFO2020-06-22 18-29-42]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[ERROR2020-06-22 18-29-43]响应body对比失败，响应body为:1,断言body为:2
+[INFO2020-06-22 18-30-01]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[ERROR2020-06-22 18-30-02]响应body对比失败，响应body为:1,断言body为:2
+[INFO2020-06-22 18-30-19]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[INFO2020-06-22 18-30-33]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[ERROR2020-06-22 18-30-34]响应body对比失败，响应body为:1,断言body为:2
+[INFO2020-06-22 18-31-23]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[INFO2020-06-22 18-31-35]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[ERROR2020-06-22 18-31-36]响应body对比失败，响应body为:1,断言body为:2
+[INFO2020-06-22 18-31-57]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[INFO2020-06-22 18-32-07]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml

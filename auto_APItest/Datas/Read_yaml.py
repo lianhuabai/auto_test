@@ -45,5 +45,6 @@ class GetPages:
         # print(data_list)
         return data_list
 
-# if __name__ == '__main__':
-#     lists = GetPages.get_data_list()
+if __name__ == '__main__':
+    lists = GetPages.get_data_list()
+    print(lists)

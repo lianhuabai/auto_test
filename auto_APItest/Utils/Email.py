@@ -46,6 +46,10 @@ class SendMail:
         message.attach(MIMEText(body, 'plain', 'utf-8'))
 
         try:
+            #windows
+            # smtp = smtplib.SMTP()
+            # smtp.connect(smtpserver)
+            #linux
             smtp = smtplib.SMTP_SSL(smtpserver)
             smtp.ehlo(smtpserver)
             smtp.login(username,password)

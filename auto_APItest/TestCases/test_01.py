@@ -4,12 +4,11 @@
 # @File : test_01.py
 
 import allure
+import pytest
 
 from Datas.datas import Test
 from Config.Config import Config
-from Utils import Requests
-from Datas import Constans
-from Utils import Assert
+from Utils import Requests, Assert
 from Utils import Token
 
 @allure.feature('小额资产兑换')

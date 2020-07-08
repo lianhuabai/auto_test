@@ -35,4 +35,5 @@ class Test:
 if __name__ == '__main__':
     t = Test()
     print(t.header)
-    print(type(t.data[0]))
+    print(t.url)
+    print(t.data)
