@@ -13,7 +13,7 @@ class Phoen_num:
         third = {
             3: random.randint(0,9),
             4: [5,7,9][random.randint(0,2)],
-            5: [i for i in range(10) if 1 != 4][random.randint(0,8)],
+            5: [i for i in range(10) if i != 4][random.randint(0,8)],
             7: [i for i in range(10) if i not in [4,9]][random.randint(0, 7)],
             8: random.randint(0,9),
         }[second]
@@ -22,7 +22,8 @@ class Phoen_num:
 
 if __name__ == '__main__':
     ph = Phoen_num()
-    with open('./data_4.txt', 'w', encoding='utf-8')as f:
-        for i in range(0,2000):
-            phone = str(ph.create_phone())
-            f.write( phone+ '\n')
+    print(ph.create_phone())
+    # with open('./data.txt', 'w', encoding='utf-8')as f:
+    #     for i in range(0,10000):
+    #         phone = str(ph.create_phone())
+    #         f.write( phone+ '\n')

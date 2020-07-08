@@ -13,7 +13,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 
 
-# url_create = "http://192.168.12.46:3030/api-v2/activity/redPacket/RegisterUser"
+url_create = "http://47.97.206.151:3030/api-v2/activity/redPacket/RegisterUser"
 url_give = "http://47.97.206.151:3030/api-v2/activity/redPacket/GivePacket"
 
 
@@ -26,7 +26,7 @@ sql = Read_sql.SQL()
 user =sql.read_mysql(sql ='select username from exchange.users order by created_at desc ',type=1,num=1200)
 
 # users = []
-# with open('./data_1.txt','r',encoding='utf-8')as f:
+# with open('./data.txt','r',encoding='utf-8')as f:
 #     for line in f:
 #         users.append(line.rstrip())
 # time.sleep(1)
@@ -39,7 +39,7 @@ def give_packet():
         'X-SITE-ID': '127',
         'Content-Type': 'application/x-www-form-urlencoded'
     }
-    res = requests.post(url=url_give,headers=header,data=data)
+    requests.post(url=url_give,headers=header,data=data)
 
 def rigister(data_path):
     users = []
@@ -53,7 +53,7 @@ def rigister(data_path):
             "username": i,
             "code": 567765
         }
-        response = requests.post(url=url_give,data=body,headers=headers)
+        response = requests.post(url=url_create,data=body,headers=headers)
         res = response.json()
         # time.sleep(0.1)
         print("新用户{0}抢红包:{1}".format(i, res))
@@ -90,30 +90,22 @@ def draw(data_path):
                 # break
             print("用户{0}抢红包:{1}".format(i,res))
 if __name__ == '__main__':
-    # t1 = Thread(target=draw,args=('./data_1.txt',))
-    # t2 = Thread(target=draw,args=('./data_2.txt',))
-    # t3 = Thread(target=rigister,args=('./data_3.txt',))
-    # t4 = Thread(target=rigister,args=('./data_4.txt',))
+    # t1 = Thread(target=draw,args=('./data.txt',))
     # t1.start()
     # t2.start()
     # t3.start()
     # t4.start()
-    for i in range(0,20):
-        give_packet()
-        time.sleep(3)
+    for i in range(0,1):
+        # give_packet()
+        # time.sleep(3)
         packet_id = str(
             sql.read_mysql(sql='select order_no from activity.rp_give_red_packet order by created_at desc')[0])
         print(packet_id)
         time.sleep(1)
         p = ThreadPoolExecutor(5)
-        # p.submit(rigister,'./data_3.txt')
-        # p.submit(rigister,'./data_4.txt')
-        p.submit(draw,'./data_1.txt')
-        p.submit(draw,'./data_2.txt')
-        p.submit(draw,'./data_3.txt')
-        p.submit(draw,'./data_4.txt')
+        p.submit(rigister,'./data.txt')
         p.shutdown(wait=True)
-        time.sleep(150)
+        time.sleep(3)
         amount = sql.read_mysql(sql='select draw_amount from activity.rp_give_red_packet where order_no = {}'.format(packet_id))
         draw_sum = sql.read_mysql(sql='select sum(amount) from activity.rp_draw_red_packet where order_no = {}'.format(packet_id))
         sum = sql.read_mysql(sql='select count(*) from activity.rp_draw_red_packet where order_no = {}'.format(packet_id))

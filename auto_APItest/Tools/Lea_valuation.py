@@ -17,7 +17,7 @@ request = Requests.Request()
 headers = {
     "X-SITE-ID":"1"
 }
-r = request.get(url='https://www.zt998.com/api/v1/exchangeTickers',headers=headers,data=None)
+r = request.get(url='http://47.97.206.151:8883/api/v1/exchangeTickers',headers=headers,data=None)
 r_json = json.loads(r['response_body'])
 tickers = r_json['result']['ticker']
 print(tickers)
@@ -108,6 +108,7 @@ class Lae:
                     price[sym] = dec(pri)/convert('BTC_ETH')
 
         print("兑换币种{0}的价格为:{1}".format(fromasset,symbol))
+        print(price)
         print("兑换币种在各交易区折算{0}最高价为:{1}".format(lea_base,price[max(price, key=price.get)]))
         #返回兑换币种各个交易区最大CNT价格
         return (price[max(price, key=price.get)])
@@ -121,6 +122,7 @@ class Lae:
         :param num: 数量
         :param deel_fee: 手续费
         :param lea_asset: 估值交易对
+        :param lea_base: 基准币种
         :return:
         '''
         try:
@@ -153,4 +155,4 @@ class Lae:
         print("预计扣除手续费{0}{1}".format(round(deel,8),to_symbol))
 
 if __name__ == '__main__':
-    Lae.exchange_price('SIPC','ZTB_USDT',0.96,0.02,'BTC_USDT','USDT')
+    Lae.exchange_price('ETH','SIPC_CNT',100.124,0.5555,'BTC_CNT','CNT')
