@@ -7,13 +7,13 @@
       "name" : "兑换资产",
       "children" : [ {
         "name" : "test_001",
-        "uid" : "6500401776ff5ff3",
+        "uid" : "168e937478d9c860",
         "parentUid" : "27cfc53bbd3aab8a5e6eeaaf5b59f480",
-        "status" : "passed",
+        "status" : "failed",
         "time" : {
-          "start" : 1589946259709,
-          "stop" : 1589946260011,
-          "duration" : 302
+          "start" : 1595601818689,
+          "stop" : 1595601818905,
+          "duration" : 216
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -23,13 +23,13 @@
       "name" : "用例2",
       "children" : [ {
         "name" : "test_002",
-        "uid" : "e5c26358f60ed013",
+        "uid" : "d461c2ec70af969c",
         "parentUid" : "6de58396a2cc7017c10d8971411aaff1",
-        "status" : "failed",
+        "status" : "passed",
         "time" : {
-          "start" : 1589946260014,
-          "stop" : 1589946260017,
-          "duration" : 3
+          "start" : 1595601819039,
+          "stop" : 1595601819039,
+          "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]

@@ -1,1 +1,0 @@
-ERROR    root:Log.py:86 [ERROR2020-06-22 18-27-46]响应body对比失败，响应body为:1,断言body为:2

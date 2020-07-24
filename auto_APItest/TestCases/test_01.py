@@ -4,12 +4,11 @@
 # @File : test_01.py
 
 import allure
-import pytest
 
 from Datas.datas import Test
 from Config.Config import Config
 from Utils import Requests, Assert
-from Utils import Token
+from Datas import Reflex
 
 @allure.feature('小额资产兑换')
 class TestExchange:
@@ -38,21 +37,19 @@ class TestExchange:
         data = Test()
         _assert = Assert.Assert()
         request = Requests.Request()
-        token = Token.Token().get_token()
         #读取host,读取url,data,headers
         host = config.activity_front_host
         urls = data.url
         params = data.data
-        headers = data.header
-        headers[0]['Authorization'] = token
 
         allure.attach('用例参数:{0}'.format(params))
         with allure.step("测试步骤调用"):
             allure.attach('失败','期望结果')
 
         api_url = host + urls[0]
-        response = request.post(url=api_url, data=params[0][0], headers=headers[0])
-
+        response = request.post(url=api_url, data=params[0][0])
+        setattr(Reflex.Reflex_api,'num',1000)
+        print(response['response_code'])
         assert _assert.assert_status(response['response_code'], 200)
         # assert _assert.assert_in_body(response['response_body'], '兑换成功')
         # assert _assert.assert_time(response['response_time'], 100)
@@ -60,4 +57,6 @@ class TestExchange:
     @allure.story('用例2')
     def test_002(self):
         _assert = Assert.Assert()
-        assert _assert.assert_body(1,2)
+        test_num = getattr(Reflex.Reflex_api,'num')
+        print(test_num)
+        assert _assert.assert_body(1000,test_num)

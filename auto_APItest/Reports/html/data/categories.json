@@ -6,14 +6,14 @@
     "children" : [ {
       "name" : "AssertionError",
       "children" : [ {
-        "name" : "test_002",
-        "uid" : "e5c26358f60ed013",
+        "name" : "test_001",
+        "uid" : "168e937478d9c860",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1589946260014,
-          "stop" : 1589946260017,
-          "duration" : 3
+          "start" : 1595601818689,
+          "stop" : 1595601818905,
+          "duration" : 216
         },
         "flaky" : false,
         "parameters" : [ ]

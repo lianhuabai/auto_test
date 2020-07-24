@@ -1,0 +1,130 @@
+{
+  "uid" : "168e937478d9c860",
+  "name" : "test_001",
+  "fullName" : "TestCases.test_01.TestExchange#test_001",
+  "historyId" : "4a9d004a8e65c30a9373e54d10e83892",
+  "time" : {
+    "start" : 1595601818689,
+    "stop" : 1595601818905,
+    "duration" : 216
+  },
+  "description" : "小额资产兑换测试",
+  "descriptionHtml" : "<p>小额资产兑换测试</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <TestCases.test_01.TestExchange object at 0x048611B0>\n\n    @allure.severity('blocker')\n    @allure.story('兑换资产')\n    @allure.description('小额资产兑换测试')\n    @allure.link('www.baidu.com')\n    @allure.issue(('BUG编号:123'))\n    @allure.testcase('验证兑换资产是否成功')\n    def test_001(self):\n        '''\n        参数信息\n        :return:\n        '''\n    \n        #实例化配置文件读取类、断言类、测试数据类\n        config = Config()\n        data = Test()\n        _assert = Assert.Assert()\n        request = Requests.Request()\n        #读取host,读取url,data,headers\n        host = config.activity_front_host\n        urls = data.url\n        params = data.data\n    \n        allure.attach('用例参数:{0}'.format(params))\n        with allure.step(\"测试步骤调用\"):\n            allure.attach('失败','期望结果')\n    \n        api_url = host + urls[0]\n        response = request.post(url=api_url, data=params[0][0])\n        setattr(Reflex.Reflex_api,'num',1000)\n        print(response['response_code'])\n>       assert _assert.assert_status(response['response_code'], 200)\n\nTestCases\\test_01.py:53: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Utils.Assert.Assert object at 0x045C51F0>, code = 401, assert_code = 200\n\n    def assert_status(self,code,assert_code):\n        '''\n        请求响应状态码断言\n        :data code:\n        :data assert_code:\n        :return:\n        '''\n        try:\n>           assert code == assert_code\nE           AssertionError\n\nUtils\\Assert.py:21: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "小额资产兑换测试",
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "self = <TestCases.test_01.TestExchange object at 0x048611B0>\n\n    @allure.severity('blocker')\n    @allure.story('兑换资产')\n    @allure.description('小额资产兑换测试')\n    @allure.link('www.baidu.com')\n    @allure.issue(('BUG编号:123'))\n    @allure.testcase('验证兑换资产是否成功')\n    def test_001(self):\n        '''\n        参数信息\n        :return:\n        '''\n    \n        #实例化配置文件读取类、断言类、测试数据类\n        config = Config()\n        data = Test()\n        _assert = Assert.Assert()\n        request = Requests.Request()\n        #读取host,读取url,data,headers\n        host = config.activity_front_host\n        urls = data.url\n        params = data.data\n    \n        allure.attach('用例参数:{0}'.format(params))\n        with allure.step(\"测试步骤调用\"):\n            allure.attach('失败','期望结果')\n    \n        api_url = host + urls[0]\n        response = request.post(url=api_url, data=params[0][0])\n        setattr(Reflex.Reflex_api,'num',1000)\n        print(response['response_code'])\n>       assert _assert.assert_status(response['response_code'], 200)\n\nTestCases\\test_01.py:53: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Utils.Assert.Assert object at 0x045C51F0>, code = 401, assert_code = 200\n\n    def assert_status(self,code,assert_code):\n        '''\n        请求响应状态码断言\n        :data code:\n        :data assert_code:\n        :return:\n        '''\n        try:\n>           assert code == assert_code\nE           AssertionError\n\nUtils\\Assert.py:21: AssertionError",
+    "steps" : [ {
+      "name" : "测试步骤调用",
+      "time" : {
+        "start" : 1595601818808,
+        "stop" : 1595601818809,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8f5cea1074928da1",
+        "name" : "期望结果",
+        "source" : "8f5cea1074928da1.attach",
+        "type" : "text/plain",
+        "size" : 6
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "f9cb249214bc151e",
+      "name" : "1e78f4c5-e415-435c-8fc4-414d7892448b-attachment.attach",
+      "source" : "f9cb249214bc151e.attach",
+      "type" : "text/plain",
+      "size" : 131
+    }, {
+      "uid" : "4766e59f077601c9",
+      "name" : "log",
+      "source" : "4766e59f077601c9.txt",
+      "type" : "text/plain",
+      "size" : 820
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 3,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "小额资产兑换"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "兑换资产"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_01"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestExchange"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-8TLGUH8"
+  }, {
+    "name" : "thread",
+    "value" : "16824-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "验证兑换资产是否成功",
+    "url" : "验证兑换资产是否成功",
+    "type" : "test_case"
+  }, {
+    "name" : "BUG编号:123",
+    "url" : "BUG编号:123",
+    "type" : "issue"
+  }, {
+    "name" : "www.baidu.com",
+    "url" : "www.baidu.com",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "168e937478d9c860.json",
+  "parameterValues" : [ ]
+}

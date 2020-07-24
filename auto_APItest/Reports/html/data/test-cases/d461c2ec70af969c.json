@@ -1,0 +1,61 @@
+{
+  "uid" : "d461c2ec70af969c",
+  "name" : "test_002",
+  "fullName" : "TestCases.test_01.TestExchange#test_002",
+  "historyId" : "4852f8a856c7054b2bc974c95a71170a",
+  "time" : {
+    "start" : 1595601819039,
+    "stop" : 1595601819039,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "用例2"
+  }, {
+    "name" : "feature",
+    "value" : "小额资产兑换"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_01"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestExchange"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-8TLGUH8"
+  }, {
+    "name" : "thread",
+    "value" : "16824-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d461c2ec70af969c.json",
+  "parameterValues" : [ ]
+}

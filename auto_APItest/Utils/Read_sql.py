@@ -90,5 +90,5 @@ class SQL:
 #         for i in user:
 #             if i[0] is not None:
 #                 f.write(i[0]+'\n')
-    # sq.read_mysql(sql=sql)
+#     sq.read_mysql(sql=sql)
     # print(sq.read_mysql(sql=sql,type=2))

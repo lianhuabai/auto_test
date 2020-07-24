@@ -351,3 +351,100 @@
 [ERROR2020-06-22 18-31-36]响应body对比失败，响应body为:1,断言body为:2
 [INFO2020-06-22 18-31-57]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
 [INFO2020-06-22 18-32-07]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[INFO2020-07-08 16-08-02]用例执行开始--------------------------
+[DEBUG2020-07-08 16-08-02]删除旧报告数据执行结果:('', None)
+[INFO2020-07-08 16-08-03]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-07-08 16-08-03]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1OTQyMzg4ODV9.ZFwAuXUpM6j_i0YI47jFNz03669rpGfRcW8SpfYMJNY
+[ERROR2020-07-08 16-08-03]响应body对比失败，响应body为:1,断言body为:2
+[DEBUG2020-07-08 16-08-11]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-07-08 16-08-12]邮件发送成功
+[INFO2020-07-08 16-08-39]用例执行开始--------------------------
+[DEBUG2020-07-08 16-08-39]删除旧报告数据执行结果:('', None)
+[INFO2020-07-08 16-08-40]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-07-08 16-08-40]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1OTQyMzg5MjF9.7vvwD4CNq7Bi482mx5bBb0gL2CQBEzjTXRLr7ksTt-Y
+[ERROR2020-07-08 16-08-40]响应body对比失败，响应body为:1,断言body为:2
+[DEBUG2020-07-08 16-08-44]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-07-08 16-08-45]邮件发送成功
+[INFO2020-07-08 16-10-46]用例执行开始--------------------------
+[DEBUG2020-07-08 16-10-46]删除旧报告数据执行结果:('', None)
+[INFO2020-07-08 16-10-47]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-07-08 16-10-47]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1OTQyMzkwNDh9.XFB3CZ3uuPYh1_FInlMdCBpgLhMuGLSKPWWvayAUq4Y
+[ERROR2020-07-08 16-10-47]响应body对比失败，响应body为:1,断言body为:2
+[DEBUG2020-07-08 16-10-52]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-07-08 16-10-52]邮件发送成功
+[INFO2020-07-08 16-15-33]用例执行开始--------------------------
+[DEBUG2020-07-08 16-15-33]删除旧报告数据执行结果:('', None)
+[INFO2020-07-08 16-15-33]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-07-08 16-15-34]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1OTQyMzkzMzV9.55znnQlLOQCOIhOHieVlTYlIf8K9Pal-8ftzLXjqjFI
+[ERROR2020-07-08 16-15-34]响应body对比失败，响应body为:1,断言body为:2
+[DEBUG2020-07-08 16-15-38]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-07-08 16-15-39]邮件发送成功
+[INFO2020-07-08 16-17-38]用例执行开始--------------------------
+[DEBUG2020-07-08 16-17-38]删除旧报告数据执行结果:('', None)
+[INFO2020-07-08 16-17-39]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-07-08 16-17-39]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1OTQyMzk0NjF9.pGXSlYa0gmKaG-hw8GZ4lHyLxGATTxe7f29k35EJ7Dk
+[ERROR2020-07-08 16-17-39]响应body对比失败，响应body为:1,断言body为:2
+[DEBUG2020-07-08 16-17-44]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-07-08 16-17-44]邮件发送成功
+[INFO2020-07-08 16-18-17]用例执行开始--------------------------
+[DEBUG2020-07-08 16-18-17]删除旧报告数据执行结果:('', None)
+[INFO2020-07-08 16-18-18]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-07-08 16-18-18]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1OTQyMzk1MDB9.at50CiATOdckrmq_cQiOi2bz_GhM23gSatq6zBxHCbU
+[ERROR2020-07-08 16-18-18]响应body对比失败，响应body为:1,断言body为:2
+[DEBUG2020-07-08 16-18-22]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-07-08 16-18-23]邮件发送成功
+[INFO2020-07-08 16-20-26]用例执行开始--------------------------
+[DEBUG2020-07-08 16-20-26]删除旧报告数据执行结果:('', None)
+[INFO2020-07-08 16-20-27]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-07-08 16-20-27]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1OTQyMzk2Mjh9.b4rtvYkqppXRp_ryoKunJ0WfgEG4StpV3n6qvmlE_L4
+[ERROR2020-07-08 16-20-27]响应body对比失败，响应body为:1,断言body为:2
+[DEBUG2020-07-08 16-20-31]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-07-08 16-20-32]邮件发送成功
+[INFO2020-07-24 21-33-22]用例执行开始--------------------------
+[DEBUG2020-07-24 21-33-22]删除旧报告数据执行结果:('', None)
+[INFO2020-07-24 21-33-24]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-07-24 21-33-26]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjowLCJleHAiOjE1OTU2NDA4MDd9.WeQnVzhqgiCtBLcJCBbvhMNoVi6WYdWXVDXUqI_ifoY
+[DEBUG2020-07-24 21-33-26]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjowLCJleHAiOjE1OTU2NDA4MDd9.WeQnVzhqgiCtBLcJCBbvhMNoVi6WYdWXVDXUqI_ifoY
+[ERROR2020-07-24 21-33-26]响应body对比失败，响应body为:1,断言body为:2
+[DEBUG2020-07-24 21-33-44]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-07-24 21-35-00]用例执行开始--------------------------
+[DEBUG2020-07-24 21-35-01]删除旧报告数据执行结果:('', None)
+[INFO2020-07-24 21-35-02]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-07-24 21-35-03]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjowLCJleHAiOjE1OTU2NDA5MDV9.WwLtT8LQJAwcL1ppPH-vUzCzHlvs3QRI46EDDzSv7Uw
+[ERROR2020-07-24 21-35-03]请求失败:Value for header {X-SITE-ID: 127} must be of type str or bytes, not <class 'int'>请求失败url:http://47.97.206.151:3030/api-v2/activity/assetExchange/Exchange
+[ERROR2020-07-24 21-35-03]响应body对比失败，响应body为:1,断言body为:2
+[DEBUG2020-07-24 21-35-12]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-07-24 21-36-02]用例执行开始--------------------------
+[DEBUG2020-07-24 21-36-02]删除旧报告数据执行结果:('', None)
+[INFO2020-07-24 21-36-04]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-07-24 21-36-05]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjowLCJleHAiOjE1OTU2NDA5NjZ9.4CVUDNQdGeEK8tPDzgn-ZKtUw9DmEqdrOnkp_SgpBNM
+[ERROR2020-07-24 21-36-05]请求状态码对比失败,请求状态码为:401,断言状态码为:200
+[ERROR2020-07-24 21-36-05]响应body对比失败，响应body为:1,断言body为:2
+[DEBUG2020-07-24 21-36-16]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-07-24 22-34-08]用例执行开始--------------------------
+[DEBUG2020-07-24 22-34-08]删除旧报告数据执行结果:('', None)
+[INFO2020-07-24 22-34-09]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-07-24 22-34-09]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjowLCJleHAiOjE1OTU2NDQ0NTF9.wHzjZVDTgZ9Rc5DBUFoRnaMltpo9uXdJ1ZgoCtPg5ac
+[ERROR2020-07-24 22-34-09]请求状态码对比失败,请求状态码为:401,断言状态码为:200
+[ERROR2020-07-24 22-34-10]响应body对比失败，响应body为:200,断言body为:1000
+[DEBUG2020-07-24 22-34-15]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-07-24 22-36-24]用例执行开始--------------------------
+[DEBUG2020-07-24 22-36-24]删除旧报告数据执行结果:('', None)
+[INFO2020-07-24 22-36-25]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-07-24 22-36-25]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjowLCJleHAiOjE1OTU2NDQ1ODd9.ApaFStpxb5s-6dioCpSljCqFU3jqYRRGA-64lxaQ_ew
+[ERROR2020-07-24 22-36-25]请求状态码对比失败,请求状态码为:401,断言状态码为:200
+[ERROR2020-07-24 22-36-26]响应body对比失败，响应body为:200,断言body为:1000
+[DEBUG2020-07-24 22-36-30]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-07-24 22-38-20]用例执行开始--------------------------
+[DEBUG2020-07-24 22-38-20]删除旧报告数据执行结果:('', None)
+[INFO2020-07-24 22-38-21]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-07-24 22-38-22]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjowLCJleHAiOjE1OTU2NDQ3MDN9.aZOvbIgfhqxMGIJdOeb1CyjvHPwVXyS0oTToirGwBR0
+[ERROR2020-07-24 22-38-22]请求状态码对比失败,请求状态码为:401,断言状态码为:200
+[ERROR2020-07-24 22-38-22]响应body对比失败，响应body为:200,断言body为:1000
+[DEBUG2020-07-24 22-38-27]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)
+[INFO2020-07-24 22-43-37]用例执行开始--------------------------
+[DEBUG2020-07-24 22-43-37]删除旧报告数据执行结果:('', None)
+[INFO2020-07-24 22-43-38]解析yaml, Path:F:\test\auto_APItest/Datas/Param/test.yaml
+[DEBUG2020-07-24 22-43-38]登录成功token为:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjowLCJleHAiOjE1OTU2NDUwMjB9.QWTukUNIGu-Rl-kaji5qsXFiRXE11JvvGgRq4uEDbnE
+[ERROR2020-07-24 22-43-38]请求状态码对比失败,请求状态码为:401,断言状态码为:200
+[DEBUG2020-07-24 22-43-43]生成html报告命令执行结果('Report successfully generated to F:\\test\\auto_APItest\\Reports\\html\n', None)

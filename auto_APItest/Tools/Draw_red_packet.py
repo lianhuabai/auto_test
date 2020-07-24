@@ -103,7 +103,7 @@ if __name__ == '__main__':
         print(packet_id)
         time.sleep(1)
         p = ThreadPoolExecutor(5)
-        p.submit(rigister,'./data.txt')
+        p.submit(draw,'./data_1.txt')
         p.shutdown(wait=True)
         time.sleep(3)
         amount = sql.read_mysql(sql='select draw_amount from activity.rp_give_red_packet where order_no = {}'.format(packet_id))

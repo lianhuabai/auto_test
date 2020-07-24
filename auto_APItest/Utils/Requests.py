@@ -6,6 +6,7 @@
 import requests
 from Utils import Log
 from Datas import Constans
+from Utils import Token
 
 
 class Request:
@@ -13,10 +14,15 @@ class Request:
         '''
         初始化日志对象，获取登录token
         '''
-        # self.token = Token.Token().get_token()
+        token = Token.Token().get_token()
         self.log = Log.MyLog()
 
-    def get(self,url,headers,data):
+        self.headers = {
+            "X-SITE-ID":"127",
+            "Authonrization":token
+        }
+
+    def get(self,url,data):
         '''
         get请求封装
         :data url:接口地址
@@ -25,7 +31,7 @@ class Request:
         :return:
         '''
         try:
-            response = requests.get(url=url,headers=headers,params=data)
+            response = requests.get(url=url,headers=self.headers,params=data)
 
         except requests.RequestException as e:
             self.log.error("请求异常：" + str(e)+"请求失败url"+ url)
@@ -42,7 +48,7 @@ class Request:
         Constans.STRESS_LIST.append(response_time)
         return response_data
 
-    def post(self,url,headers,data):
+    def post(self,url,data):
         '''
         post请求封装
         :data url:接口地址
@@ -51,7 +57,8 @@ class Request:
         :return:
         '''
         try:
-            response = requests.post(url=url,headers=headers,data=data)
+            response = requests.post(url=url,headers=self.headers,data=data)
+            print(self.headers)
 
         except requests.RequestException as e:
             self.log.error("请求失败:"+ str(e)+"请求失败url:"+ url)
