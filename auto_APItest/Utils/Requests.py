@@ -22,7 +22,7 @@ class Request:
             "Authonrization":token
         }
 
-    def get(self,url,data):
+    def get(self,url,data=None):
         '''
         get请求封装
         :data url:接口地址
@@ -48,7 +48,7 @@ class Request:
         Constans.STRESS_LIST.append(response_time)
         return response_data
 
-    def post(self,url,data):
+    def post(self,url,data=None):
         '''
         post请求封装
         :data url:接口地址
@@ -74,6 +74,7 @@ class Request:
         Constans.STRESS_LIST.append(response_time)
         return response_data
 
-# if __name__ == '__main__':
-#     r = Request()
-#     r.get(url='http://www.baidu.com',headers=None,data=None)
+if __name__ == '__main__':
+    r = Request()
+    re = r.get(url='http://www.baidu.com')
+    print(re['response_time'])

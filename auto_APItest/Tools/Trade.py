@@ -7,14 +7,17 @@ import requests
 import time
 from Datas import Constans
 from Utils import Requests
+from Utils import Token
 
 num = round(random.uniform(40000,8),8)
 a = random.randint(1,10)
 re = Requests.Request()
 
+token = Token.Token().get_token()
+
 headers = {
     'X-SITE-ID':'127',
-    'Authorization':'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEwMDMzNDYsIkxvZ2luVmVyaWZ5IjoxLCJleHAiOjE1ODkzODA3OTh9.9_-E03GXdzXNNkWyWMLXSD-9pYSWftKlpDhAgSxMQ6A'
+    'Authorization':token
 }
 url = 'http://47.97.206.151:8883/api/v1/user/trade/limit'
 data = {
@@ -32,5 +35,4 @@ def xiadan(num = 2):
         print(type(data))
 
 if __name__ == '__main__':
-    #设置参数num = 循环次数默认100次
     xiadan()
